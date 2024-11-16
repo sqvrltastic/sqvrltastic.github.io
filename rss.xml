@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RSS test title or something</title>
+    <link>https://sqvrltastic.github.io/</link>
+    <description>This is description for my RSS test thing.</description>
+    <language>en-us</language>
+      <lastBuildDate>
+    Sat, 16 Nov 2024 10:23:45 +0000
+  </lastBuildDate>
+    <item>
+      <title>Item one!!!</title>
+      <link>https://sqvrltastic.github.io/item-one.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/public/drinks/banana-vanilla-milkshake.html</guid>
+      <description>Description for item one! SOMETHING SOMETHING AAA</description>
+    </item>
+    </channel>
+</rss>
