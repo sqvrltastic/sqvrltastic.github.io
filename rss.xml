@@ -1,18 +1,24 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>RSS test title or something</title>
-    <link>https://sqvrltastic.github.io/</link>
-    <description>This is description for my RSS test thing.</description>
-    <language>en-us</language>
-      <lastBuildDate>
-    Sat, 16 Nov 2024 10:23:45 +0000
-  </lastBuildDate>
-    <item>
-      <title>Item one!!!</title>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/public/drinks/banana-vanilla-milkshake.html</guid>
-      <description>Description for item one! SOMETHING SOMETHING AAA</description>
-    </item>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Simple Recipes</title>
+        <description>
+            A no ads, no nonsense simple cooking website featuring recipes everyone can make.
+        </description>
+        <link>https://sqvrltastic.github.io/</link>
+        <lastBuildDate>
+            Sat, 16 Nov 2024 14:54:30 +0000
+        </lastBuildDate>
+        <language>en-us</language>
+        <item>
+            <title>Created this website!</title>
+            <description>
+                This website was created on November 16th, 2024, hurray! It is built purely with
+                HTML and CSS and with the help of HUGO website generator.
+            </description>
+            <pubDate>
+                Sat, 16 Nov 2024 14:54:30 +0000
+            </pubDate>
+        </item>
     </channel>
 </rss>
