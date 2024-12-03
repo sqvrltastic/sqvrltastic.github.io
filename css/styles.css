@@ -117,8 +117,7 @@ main {
 
 footer {
   font-size: 0.6rem;
-  inline-size: fit-content;
-  margin: 2rem auto 0;
+  text-align: center;
 }
 
 .center {
