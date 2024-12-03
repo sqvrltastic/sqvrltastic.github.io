@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Sqvrltastic Art Archive</title>
         <description>
-            ...
+            Hi, I'm sqvrltastic and I'm a digital artist. Welcome to my website! This is my main place for posting my artwork and sharing my thoughts.
         </description>
-        <link>https://sqvrltastic.github.io</link>
+        <link>https://sqvrltastic.github.io/rss.xml</link>
+        <atom:link
+            href="https://sqvrltastic.github.io/rss.xml"
+            rel="self"
+            type="application/rss+xml"
+        />
+        <ttl>1440</ttl>
+        <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Wed, 20 Nov 2024 14:12:54 +0000
+            Tue, 03 Dec 2024 16:56:51 +0000
         </lastBuildDate>
         <language>en-us</language>
 
         <item>
-            <title>November 20th 2024</title>
+            <title>December 3 2024</title>
             <description>
-                This website was created on November 20th, 2024, hurray! It's built purely with
-                HTML and CSS and with the help of HUGO website generator. Happy cooking and website
-                making everyone!!!
+                This website was created on November 20th, 2024, hurray! It's built purely
+                with HTML and CSS and with the help of HUGO website generator.
             </description>
             <pubDate>
-                Wed, 20 Nov 2024 14:12:54 +0000
+                Tue, 03 Dec 2024 16:56:51 +0000
             </pubDate>
         </item>
 
