@@ -116,7 +116,7 @@ main {
 }
 
 footer {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   inline-size: fit-content;
   margin: 2rem auto 0;
 }
@@ -260,7 +260,7 @@ footer {
 
 @media (max-width: 650px) {
   header > pre {
-    font-size: 2vmin;
+    font-size: small;
   }
   .dnav {
     display: none;
@@ -277,11 +277,17 @@ footer {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
+  header > pre {
+    font-size: 2.5vmin;
+  }
+
   .mnav-a {
     display: none;
   }
+
   .mnav-b {
     display: block;
+    font-size: smaller;
   }
 }
