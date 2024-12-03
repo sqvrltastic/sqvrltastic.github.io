@@ -290,4 +290,8 @@ footer {
     display: block;
     font-size: smaller;
   }
+
+  details > *:not(summary) {
+    margin: 1rem 0.5rem;
+  }
 }
