@@ -1,0 +1,287 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+/* General styling */
+
+body {
+  background-color: whitesmoke;
+  font-family: "Courier New", "Courier", "Liberation Mono", monospace;
+}
+
+h1 {
+  font-size: larger;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-inline-size: 30rem;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  font-size: medium;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  color: hotpink;
+}
+
+hr {
+  border: none;
+  border-block-start: 0.1rem dotted lightgray;
+  margin: 1.5rem 0;
+}
+
+ul > li::marker {
+  content: "\003E \0020"/ "";
+}
+
+details {
+  margin: 1rem 0;
+  border: 0.01rem solid lightgray;
+}
+
+details > *:not(summary) {
+  margin: 1rem 1.25rem;
+}
+
+summary {
+  padding: 0.5rem;
+  background-color: lightgray;
+  text-decoration: underline;
+}
+
+summary > h3 {
+  display: inline;
+}
+
+summary:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+summary:active {
+  color: hotpink;
+}
+
+.code {
+  max-inline-size: 15rem;
+  block-size: 4rem;
+  padding: 0.5rem;
+  border: solid 0.01rem black;
+  background-color: white;
+  overflow-y: scroll;
+  font-size: 0.65rem;
+}
+
+code {
+  display: block;
+  font-family: "Courier New", "Courier", "Liberation Mono", monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+header {
+  margin: 2rem auto;
+}
+
+header > pre {
+  text-align: center;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 0.7rem;
+  inline-size: fit-content;
+  margin: 2rem auto 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mnav-a,
+.mnav-b {
+  display: none;
+}
+
+/* Gallery */
+
+.gallery,
+.featured {
+  display: grid;
+  inline-size: fit-content;
+  block-size: fit-content;
+  gap: 0.5rem;
+}
+
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.featured {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.preview {
+  overflow: hidden;
+  position: relative;
+  border: 0.1rem solid transparent;
+  display: block;
+}
+
+.preview:hover {
+  border: 0.1rem solid hotpink;
+  cursor: pointer;
+}
+
+.preview:active {
+  border: 0.1rem solid white;
+}
+
+.preview > img {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.preview > p {
+  text-decoration: none;
+  font-weight: bold;
+  color: hotpink;
+  text-shadow: -0.05rem -0.05rem 0 white, 0.05rem -0.05rem 0 white,
+    -0.05rem 0.05rem 0 white, 0.05rem 0.05rem 0 white;
+  position: absolute;
+  inset-block-end: -1rem;
+  inset-inline-start: 0.2rem;
+}
+
+.full {
+  inline-size: fit-content;
+  block-size: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.full > img {
+  max-inline-size: 100%;
+  max-block-size: 30rem;
+  display: block;
+  margin: 0;
+}
+
+.artwork-container {
+  max-inline-size: fit-content;
+}
+
+/* 88x31 buttons showcase */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin: 1rem 0;
+}
+
+.buttons > a {
+  display: block;
+  border: 0.1rem solid transparent;
+}
+
+.buttons > a:hover {
+  border: 0.1rem solid hotpink;
+}
+
+.buttons > a:active {
+  border: 0.1rem solid white;
+}
+
+.buttons img {
+  display: block;
+}
+
+.buttons > img {
+  border: 0.1rem solid transparent;
+}
+
+.btn {
+  display: block;
+  margin: 1rem 0;
+}
+
+/* CSS for 404 page */
+
+.fourofour {
+  inline-size: fit-content;
+  block-size: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+/* CSS for smaller screens */
+
+@media (max-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  header > pre {
+    font-size: 2vmin;
+  }
+  .dnav {
+    display: none;
+  }
+  .mnav-a {
+    display: block;
+  }
+}
+
+@media (max-width: 510px) {
+  .preview > p {
+    font-size: 0.9rem;
+    inset-block-end: -0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .mnav-a {
+    display: none;
+  }
+  .mnav-b {
+    display: block;
+  }
+}
