@@ -14,9 +14,19 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Tue, 03 Dec 2024 16:56:51 +0000
+            Thu, 12 Dec 2024 11:34:12 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>December 12th 2024</title>
+            <description>
+                Added a 88x31 website button. Additionally, I rewrote the "About" page to make it more concise and fixed various typos and grammar mistakes throughout the site. 
+            </description>
+            <pubDate>
+                Thu, 12 Dec 2024 11:34:12 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>December 3rd 2024</title>
