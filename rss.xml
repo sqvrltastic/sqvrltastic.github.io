@@ -14,9 +14,20 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 12 Dec 2024 11:34:12 +0000
+            Fri, 13 Dec 2024 12:28:33 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>December 13th 2024</title>
+            <description>
+                Added a button for Wiby, a web search engine specifically for old and indie
+                websites. You can find it in my button collection.
+            </description>
+            <pubDate>
+                Fri, 13 Dec 2024 12:28:33 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>December 12th 2024</title>
