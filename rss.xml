@@ -14,18 +14,19 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Sat, 14 Dec 2024 13:30:58 +0000
+            Thu, 26 Dec 2024 15:14:42 +0000
         </lastBuildDate>
         <language>en-us</language>
 
         <item>
-            <title>December 14th 2024</title>
+            <title>IMAGE TEST</title>
             <description>
-               THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.
+            <img src="https://sqvrltastic.github.io/images/featured/vermintide-shade-kerillian-moonfire-bow.avif" />
+               <p>THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.</p>
             </description>
             <enclosure url="http://localhost:1313/images/featured/vermintide-shade-kerillian-moonfire-bow.avif" type="image/jpeg"/>
             <pubDate>
-                Sat, 14 Dec 2024 13:30:58 +0000
+                Thu, 26 Dec 2024 15:14:42 +0000
             </pubDate>
         </item>
 
