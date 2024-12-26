@@ -21,6 +21,17 @@
         <item>
             <title>December 14th 2024</title>
             <description>
+               THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.
+            </description>
+            <enclosure url="http://localhost:1313/images/featured/vermintide-shade-kerillian-moonfire-bow.avif" type="image/jpeg"/>
+            <pubDate>
+                Sat, 14 Dec 2024 13:30:58 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <title>December 14th 2024</title>
+            <description>
                 Small addition to the "About me" page meant to clarify my stance of some
                 further details regarding reposting my artwork.
             </description>
