@@ -14,23 +14,22 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 26 Dec 2024 16:44:13 +0000
+            Thu, 26 Dec 2024 17:11:12 +0000
         </lastBuildDate>
         <language>en-us</language>
 
         <item>
-            <guid>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</guid>
-            <title>IMAGE POST TEST</title>
+            <guid>https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html</guid>
+            <title>December 26th 2024</title>
             <description>
-            <img src="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" />
-            <p>THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.[2]</p>
-            <p>Ok so this works, good. Now I need to test if the <a href="https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html">links</a> work too out of curiosity.</p>
-            <p>YOU CAN UNSUBSCRIBE AND RESUBSCRIBE LATER AND ALSO MAKE SURE TO CLEAN YOUR CACHE! i will delete this later as not to clutter the feed</p>
+            <img src="https://sqvrltastic.github.io/images/full/lotgh-fanart-christmas-dusty.jpg" />
+            <p>First time posting new artwork in a while... Check it out here: <a href="https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html">Christmas Dusty Attenborough</a></p>
+            <p>Additionally, made some minor website changes and improvements. Rewrote some sections in "About" page again, nothing major though.</p>
             </description>
-            <enclosure url="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" type="image/jpeg"/>
-            <link>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</link>
+            <enclosure url="https://sqvrltastic.github.io/images/full/lotgh-fanart-christmas-dusty.jpg" type="image/jpeg"/>
+            <link>https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html</link>
             <pubDate>
-                Thu, 26 Dec 2024 16:44:13 +0000
+                Thu, 26 Dec 2024 17:11:12 +0000
             </pubDate>
         </item>
 
