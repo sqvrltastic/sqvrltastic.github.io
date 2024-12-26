@@ -14,19 +14,20 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 26 Dec 2024 15:14:42 +0000
+            Thu, 26 Dec 2024 16:44:13 +0000
         </lastBuildDate>
         <language>en-us</language>
 
         <item>
-            <title>IMAGE TEST</title>
+            <guid>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</guid>
+            <title>IMAGE POST TEST</title>
             <description>
-            <img src="https://sqvrltastic.github.io/images/featured/vermintide-shade-kerillian-moonfire-bow.avif" />
-               <p>THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.</p>
+            THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.[2]
             </description>
-            <enclosure url="http://localhost:1313/images/featured/vermintide-shade-kerillian-moonfire-bow.avif" type="image/jpeg"/>
+            <enclosure url="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" type="image/jpeg"/>
+            <link>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</link>
             <pubDate>
-                Thu, 26 Dec 2024 15:14:42 +0000
+                Thu, 26 Dec 2024 16:44:13 +0000
             </pubDate>
         </item>
 
