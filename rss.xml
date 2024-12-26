@@ -24,6 +24,8 @@
             <description>
             <img src="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" />
             <p>THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.[2]</p>
+            <p>Ok so this works, good. Now I need to test if the <a href="https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html">links</a> work too out of curiosity.</p>
+            <p>YOU CAN UNSUBSCRIBE AND RESUBSCRIBE LATER AND ALSO MAKE SURE TO CLEAN YOUR CACHE! i will delete this later as not to clutter the feed</p>
             </description>
             <enclosure url="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" type="image/jpeg"/>
             <link>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</link>
