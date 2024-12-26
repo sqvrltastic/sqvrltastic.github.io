@@ -22,7 +22,7 @@
             <guid>https://sqvrltastic.github.io/gallery/vermintide-waystalker-kerillian-portrait.html</guid>
             <title>IMAGE POST TEST</title>
             <description>
-            <img src="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" />< /br>
+            <img src="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" /><br />
             <p>THIS IS A TEST. I am testing out if i can add image to rss feed. Ignore this post.[2]</p>
             </description>
             <enclosure url="https://sqvrltastic.github.io/images/full/vermintide-waystalker-kerillian-portrait.jpg" type="image/jpeg"/>
