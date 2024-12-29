@@ -14,27 +14,79 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 26 Dec 2024 17:11:12 +0000
+            Sun, 29 Dec 2024 10:50:43 +0000
         </lastBuildDate>
         <language>en-us</language>
 
         <item>
+            <guid>
+                https://sqvrltastic.github.io/blog/full-guide-to-rss.html
+            </guid>
+            <title>Full guide to RSS</title>
+            <description>
+                What is RSS, why you should use it and how to implement it on your own website, explained.
+            </description>
+            <link>
+                https://sqvrltastic.github.io/blog/full-guide-to-rss.html
+            </link>
+            <pubDate>
+                Sun, 29 Dec 2024 10:50:43 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <title>Website update #6</title>
+            <description>
+                <p>
+                    The year is ending soon. In the meantime, I added a new section to my website
+                    - my <a href="https://sqvrltastic.github.io/blog">blog</a> and I posted my very first
+                    <a href="https://sqvrltastic.github.io/blog/full-guide-to-rss.html">Full guide to RSS</a>!
+                </p>
+                <p>
+                    As usual, I made some minor design and functionality changes to my website.
+                </p>
+                <p>
+                    Also, important notice! I decided to redo my RSS feed a bit, so you
+                    might want to unsubscribe &#x26; resubscribe and don't forget to clear your
+                    reader's cache for changes to show!
+                </p>
+            </description>
+            <pubDate>
+                Sun, 29 Dec 2024 10:50:42 +0000
+            </pubDate>
+        </item>
+
+        <item>
             <guid>https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html</guid>
-            <title>December 26th 2024</title>
+            <title>Christmas Dusty Attenborough</title>
             <description>
             <img src="https://sqvrltastic.github.io/images/full/lotgh-fanart-christmas-dusty.jpg" />
-            <p>First time posting new artwork in a while... Check it out here: <a href="https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html">Christmas Dusty Attenborough</a></p>
-            <p>Additionally, made some minor website changes and improvements. Rewrote some sections in "About" page again, nothing major though.</p>
+            <p>Inspired by <a href="https://old.reddit.com/r/logh/comments/1hizgns/tis_the_season/"> this reddit post</a> by u/treesniper12.</p>
             </description>
-            <enclosure url="https://sqvrltastic.github.io/images/full/lotgh-fanart-christmas-dusty.jpg" type="image/jpeg"/>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/lotgh-fanart-christmas-dusty.jpg" 
+                type="image/jpeg" 
+                length="527069"
+            />
             <link>https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html</link>
+            <pubDate>
+                Thu, 26 Dec 2024 17:11:15 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <title>Website update #5</title>
+            <description>
+                <p>First time posting new artwork in a while... Check it out here: <a href="https://sqvrltastic.github.io/gallery/lotgh-christmas-dusty.html">Christmas Dusty Attenborough</a></p>
+                <p>Additionally, made some minor website changes and improvements. Rewrote some sections in "About" page again, nothing major though.</p>
+            </description>
             <pubDate>
                 Thu, 26 Dec 2024 17:11:12 +0000
             </pubDate>
         </item>
 
         <item>
-            <title>December 14th 2024</title>
+            <title>Website update #4</title>
             <description>
                 Small addition to the "About me" page meant to clarify my stance of some
                 further details regarding reposting my artwork.
@@ -45,7 +97,7 @@
         </item>
 
         <item>
-            <title>December 13th 2024</title>
+            <title>Website update #3</title>
             <description>
                 Added a button for Wiby, a web search engine specifically for old and indie
                 websites. You can find it in my button collection.
@@ -56,9 +108,16 @@
         </item>
 
         <item>
-            <title>December 12th 2024</title>
+            <title>Website update #2</title>
             <description>
-                Added a 88x31 website button. Additionally, I rewrote the "About" page to make it more concise and fixed various typos and grammar mistakes throughout the site. 
+                <p>
+                    Added a 88x31 website button. Check it out
+                    <a href="./misc.html">here</a>!
+                </p>
+                <p>
+                    Additionally, I rewrote the "About" page to make it more concise and fixed
+                    various typos and grammar mistakes throughout the site.
+                </p>
             </description>
             <pubDate>
                 Thu, 12 Dec 2024 11:34:12 +0000
@@ -66,7 +125,7 @@
         </item>
 
         <item>
-            <title>December 3rd 2024</title>
+            <title>Website update #1</title>
             <description>
                 This website was created on December 3rd, 2024, hurray! It's built purely
                 with HTML and CSS and with the help of HUGO website generator.

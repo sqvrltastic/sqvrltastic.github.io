@@ -80,19 +80,7 @@ summary:active {
   color: hotpink;
 }
 
-.code {
-  max-inline-size: 15rem;
-  block-size: 4rem;
-  padding: 0.5rem;
-  border: solid 0.01rem black;
-  background-color: white;
-  overflow-y: scroll;
-  font-size: 0.65rem;
-}
-
-code {
-  display: block;
-  font-family: "Courier New", "Courier", "Liberation Mono", monospace;
+pre {
   white-space: pre-wrap;
   word-break: break-all;
 }
@@ -120,25 +108,37 @@ footer {
   text-align: center;
 }
 
-.center {
+/* Ocasionally used text styles */
+
+.text-center {
   text-align: center;
 }
 
-.uppercase {
+.text-uppercase {
   text-transform: uppercase;
 }
 
-.red {
-  color: red;
+.text-colored {
+  color: crimson;
 }
 
-.blue {
-  color: blue;
-}
+/* Mobile navbars */
 
 .mnav-a,
 .mnav-b {
   display: none;
+}
+
+/* Code box element */
+
+.btn-code {
+  max-inline-size: 15rem;
+  block-size: 4rem;
+  padding: 0.5rem;
+  border: solid 0.01rem black;
+  background-color: white;
+  overflow-y: scroll;
+  font-size: 0.65rem;
 }
 
 /* Gallery */
@@ -259,21 +259,23 @@ footer {
 
 /* CSS for smaller screens */
 
-@media (max-width: 720px) {
+@media (max-width: 725px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dnav {
+    display: none;
+  }
+
+  .mnav-a {
+    display: block;
   }
 }
 
 @media (max-width: 650px) {
   header > pre {
     font-size: small;
-  }
-  .dnav {
-    display: none;
-  }
-  .mnav-a {
-    display: block;
   }
 }
 
@@ -290,11 +292,6 @@ footer {
   }
 
   .mnav-a {
-    display: none;
-  }
-
-  .mnav-b {
-    display: block;
     font-size: smaller;
   }
 
