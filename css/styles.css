@@ -122,6 +122,10 @@ footer {
   color: crimson;
 }
 
+.text-breakall {
+  word-break: break-all;
+}
+
 /* Mobile navbars */
 
 .mnav-a,
