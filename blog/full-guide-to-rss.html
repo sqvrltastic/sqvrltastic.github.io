@@ -329,6 +329,13 @@
       some optional extra functionality.
     </i>
   </p>
+  <p>
+    <i>
+      Do note that <code>&lt;a&gt;</code> tags (links) tend to bunch up at the
+      end of the paragraph all the time, even if they are placed in the middle
+      of it, <s>for some reason</s>...
+    </i>
+  </p>
   <hr />
   <pre><code><span class="text-colored">&#x3C;item&#x3E;
     &#x3C;guid&#x3E;</span>https://<i>www.yourwebsite.com/link-to-your-post.html</i><span class="text-colored">&#x3C;/guid&#x3E;
@@ -406,6 +413,38 @@
   keep in mind that
   <strong>you have to use absolute (full path) and not relative links!</strong>
 </p>
+<p>
+  Also, another important note, with
+  <code>&lt;guid&gt;</code> and <code>&lt;link&gt;</code>,
+  <strong>don't do this</strong>:
+</p>
+<details>
+  <summary>(show code)</summary>
+  <pre><code>
+<span class="text-colored text-uppercase">&#x3C;!-- Don't do this!--&#x3E;</span>
+
+&#x3C;item&#x3E;
+    <span class="text-colored">&#x3C;guid&#x3E;
+        https://<i>www.yourwebsite.com/link-to-your-post.html</i>
+    &#x3C;/guid&#x3E;</span>
+    &#x3C;title&#x3E;<i>Title of your post</i>&#x3C;/title&#x3E;
+    &#x3C;description&#x3E;
+        <i>Description of your post</i>
+    &#x3C;/description&#x3E;
+    <span class="text-colored">&#x3C;link&#x3E;
+        https://<i>www.yourwebsite.com/link-to-your-post.html</i>
+    &#x3C;/link&#x3E;</span>
+    &#x3C;pubDate&#x3E;
+        <i>Time and date when the item was made in RFC2822 format</i>
+    &#x3C;/pubDate&#x3E;
+&#x3C;/item&#x3E;</code></pre>
+  <hr />
+  <p>
+    Don't transfer the hyperlink itself onto the new line and then indent it. I
+    found that formatting it like that creates spaces before the link so the
+    link becomes invalid!
+  </p>
+</details>
 <p>
   <code>&lt;enclosure&gt;</code> - <i>supposedly optional</i>, according to
   rssboard.org; a sub element of <code>&lt;item&gt;</code> that allows for
@@ -526,9 +565,23 @@
   like "favicon.ico".
 </p>
 <p>
-  Also, one more thing. When troubleshooting your RSS feed in RSS readers,
-  remember to occasionally unsubscribe and resubscribe and <em>clear cache</em>!
-  Because often you just need to refresh it for your changes to show up.
+  Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
+  RSS readers, remember to occasionally unsubscribe and resubscribe and
+  <em>clear cache</em>! Because often you just need to refresh it for your
+  changes to show up.
+</p>
+<p>
+  Oh and lastly, if you want to include some
+  <strong>special characters</strong> like "&" for example, make sure to write
+  them as a HTML entity, so as "&#x26;#x26;" (without the quotation marks) in
+  this case. Here is a basic
+  <a
+    href="https://mothereff.in/html-entities"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    HTML entity encoder/decoder </a
+  >.
 </p>
 <p>
   You can read more about the official RSS documentation on
