@@ -19,16 +19,12 @@
         <language>en-us</language>
 
         <item>
-            <guid>
-                https://sqvrltastic.github.io/blog/full-guide-to-rss.html
-            </guid>
+            <guid>https://sqvrltastic.github.io/blog/full-guide-to-rss.html</guid>
             <title>Full guide to RSS</title>
             <description>
                 What is RSS, why you should use it and how to implement it on your own website, explained.
             </description>
-            <link>
-                https://sqvrltastic.github.io/blog/full-guide-to-rss.html
-            </link>
+            <link>https://sqvrltastic.github.io/blog/full-guide-to-rss.html</link>
             <pubDate>
                 Sun, 29 Dec 2024 10:50:43 +0000
             </pubDate>
