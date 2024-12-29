@@ -64,7 +64,7 @@
   </li>
 </ul>
 <hr />
-<h2>What is RSS?</h2>
+<h2 id="what-is-rss">What is RSS?</h2>
 <p>
   From
   <a
@@ -105,7 +105,7 @@
   and the code is open source.
 </p>
 <hr />
-<h2>Why use RSS?</h2>
+<h2 id="why-use-rss">Why use RSS?</h2>
 <p>
   Because social media feeds suck. You always get irrelevant, garbage posts, ads
   and you often don't even see the posts from people that you follow because of
@@ -126,7 +126,7 @@
   newsletter with your email.
 </p>
 <hr />
-<h2>For users: How to use RSS</h2>
+<h2 id="for-users">For users: How to use RSS</h2>
 <p>
   As I said already, you will need an RSS feed reader program. On PC, you can
   use Fluent Reader like I do, or choose whichever one you like the most. They
@@ -212,7 +212,9 @@
   but they can be hidden.
 </p>
 <hr />
-<h2>For developers: How to add an RSS feed to your website</h2>
+<h2 id="for-developers">
+  For developers: How to add an RSS feed to your website
+</h2>
 <p>
   Now that I have hopefully convinced you of how great RSS is, here is a
   tutorial on how to actually implement it and add it to your website.
@@ -361,7 +363,7 @@
     <span class="text-colored">&#x3C;/pubDate&#x3E;
 &#x3C;/item&#x3E;</span></code></pre>
 </details>
-<p>Some further explanation of each field:</p>
+<p>Further explanation of each field:</p>
 <p>
   <code>&lt;ttl&gt;</code> - "time to live"; tells your RSS reader how often to
   refresh the page. Time is set in minutes. Putting 1440 as value means that
@@ -465,10 +467,10 @@
     Some more info about the <code>&lt;enclosure&gt;</code> element...
   </summary>
   <p>
-    It has three attributes: <code>url</code>, <code>length</code> and
-    <code>type</code>. <code>url</code> is a link that points to your media
-    file's location, <code>length</code> is the size of the file in bytes and
-    <code>type</code> specifies the media type (<abbr
+    <code>&lt;enclosure&gt;</code> has three attributes: <code>url</code>,
+    <code>length</code> and <code>type</code>. <code>url</code> is a link that
+    points to your media file's location, <code>length</code> is the size of the
+    file in bytes and <code>type</code> specifies the media type (<abbr
       title="Multipurpose Internet Mail Extensions"
       >MIME</abbr
     >
