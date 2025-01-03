@@ -14,9 +14,21 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Sun, 29 Dec 2024 10:50:43 +0000
+            Fri, 03 Jan 2025 12:40:04 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/blog/plans-for-2025-year.html</guid>
+            <title>Plans for 2025 year</title>
+            <description>
+                Search engine woes and custom domain soon, maybe??
+            </description>
+            <link>https://sqvrltastic.github.io/blog/plans-for-2025-year.html</link>
+            <pubDate>
+                Fri, 03 Jan 2025 12:40:04 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/blog/full-guide-to-rss.html</guid>
@@ -106,7 +118,7 @@
             <description>
                 <p>
                     Added a 88x31 website button. Check it out
-                    <a href="https://sqvrltastic.github.io/misc.html">here</a>!
+                    <a href="./misc.html">here</a>!
                 </p>
                 <p>
                     Additionally, I rewrote the "About" page to make it more concise and fixed
