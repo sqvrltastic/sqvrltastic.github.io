@@ -14,9 +14,23 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Sun, 05 Jan 2025 15:56:17 +0000
+            Mon, 06 Jan 2025 13:55:35 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #7</title>
+            <description>
+                 Created a new 176x62 banner for the website; 
+                 it can be found in Miscellaneous. Restructured the website a bit 
+                 and added a 90s style enter page because I think they're cool! 
+                 Did some other minor changes and cleanup to site's code 
+                 that are not worth mentioning here... 
+            </description>
+            <pubDate>
+                Mon, 06 Jan 2025 13:55:35 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/blog/stop-posting-artwork-to-twitter.html</guid>
