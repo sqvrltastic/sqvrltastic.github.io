@@ -248,7 +248,9 @@ footer {
   border: solid 0.01rem black;
   background-color: white;
   overflow-y: scroll;
+  overflow-x: hidden;
   font-size: 0.65rem;
+  word-break: break-all;
 }
 
 /* CSS for landing page */
