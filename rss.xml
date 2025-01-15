@@ -14,9 +14,19 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Mon, 06 Jan 2025 13:55:35 +0000
+            Wed, 15 Jan 2025 13:14:10 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #8</title>
+            <description>
+                 <p>Added a new large 468x60 website banner. Check it out <a href="https://sqvrltastic.github.io/buttons.html">here</a></p>
+            </description>
+            <pubDate>
+                Wed, 15 Jan 2025 13:14:10 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #7</title>
@@ -85,7 +95,7 @@
             <description>
                 <p>
                     The year is ending soon. In the meantime, I added a new section to my website
-                    - a blog and I posted my very first guide - "Full guide to RSS"!
+                    — a blog and I posted my very first guide — "Full guide to RSS"!
                 </p>
                 <p>
                     As usual, I made some minor design and functionality changes to my website.
@@ -156,7 +166,7 @@
             <description>
                 <p>
                     Added a 88x31 website button. Check it out
-                    <a href="./misc.html">here</a>!
+                    <a href="https://sqvrltastic.github.io/buttons.html">here</a>!
                 </p>
                 <p>
                     Additionally, I rewrote the "About" page to make it more concise and fixed

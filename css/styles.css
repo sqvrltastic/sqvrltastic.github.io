@@ -80,6 +80,10 @@ summary:active {
   color: hotpink;
 }
 
+figure {
+  margin: 1rem 0;
+}
+
 pre {
   white-space: pre-wrap;
   word-break: break-all;
@@ -234,9 +238,11 @@ footer {
   border: 0.1rem solid transparent;
 }
 
-.btn {
-  display: block;
-  margin: 1rem 0;
+/* Responsive big banner */
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Code box element */
@@ -251,6 +257,7 @@ footer {
   overflow-x: hidden;
   font-size: 0.65rem;
   word-break: break-all;
+  margin-top: 0.7rem;
 }
 
 /* CSS for landing page */
@@ -310,11 +317,7 @@ footer {
 
 /* CSS for smaller screens */
 
-@media (max-width: 725px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+@media (max-width: 770px) {
   .dnav {
     display: none;
   }
@@ -325,6 +328,12 @@ footer {
 
   header > pre {
     font-size: small;
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
