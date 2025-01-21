@@ -14,9 +14,60 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Wed, 15 Jan 2025 13:14:10 +0000
+            Tue, 21 Jan 2025 19:01:06 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/vermintide-angry-kerillian-doodle.html</guid>
+            <title>Angry Kerillian doodle</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/vermintide-angry-kerillian-doodle.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/vermintide-angry-kerillian-doodle.jpg" 
+                type="image/jpeg" 
+                length="421745"
+            />
+            <link>https://sqvrltastic.github.io/gallery/vermintide-angry-kerillian-doodle.html</link>
+            <pubDate>
+                Tue, 21 Jan 2025 19:01:05 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/vermintide-big-elf-ears-kerillian.html</guid>
+            <title>Kerillian with comically large elven ears</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/vermintide-big-elf-ears-kerillian.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/vermintide-big-elf-ears-kerillian.jpg" 
+                type="image/jpeg" 
+                length="803211"
+            />
+            <link>https://sqvrltastic.github.io/gallery/vermintide-big-elf-ears-kerillian.html</link>
+            <pubDate>
+                Tue, 21 Jan 2025 19:01:04 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/anatomy-skull-sketch-dump.html</guid>
+            <title>Skull anatomy sketch dump</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/anatomy-skull-sketch-dump.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/anatomy-skull-sketch-dump.jpg" 
+                type="image/jpeg" 
+                length="633327"
+            />
+            <link>https://sqvrltastic.github.io/gallery/anatomy-skull-sketch-dump.html</link>
+            <pubDate>
+                Tue, 21 Jan 2025 19:01:03 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #8</title>
