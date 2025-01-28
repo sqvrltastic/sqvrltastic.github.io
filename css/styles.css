@@ -139,6 +139,36 @@ footer {
   width: 0.8rem;
 }
 
+.spoiler {
+  background-color: darkgray;
+  color: darkgray;
+}
+
+.spoiler:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: medium;
+  font-weight: bold;
+}
+
 /* Gallery */
 
 .gallery,

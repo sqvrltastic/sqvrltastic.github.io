@@ -14,9 +14,39 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Tue, 21 Jan 2025 19:01:06 +0000
+            Tue, 28 Jan 2025 15:54:32 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/montenegro-chan-boba-tea-challenge-2025.html</guid>
+            <title>Montenegro-chan boba tea challenge (2025 redraw version)</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/montenegro-chan-boba-tea-challenge-2025.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/montenegro-chan-boba-tea-challenge-2025.jpg" 
+                type="image/jpeg" 
+                length="724706"
+            />
+            <link>https://sqvrltastic.github.io/gallery/montenegro-chan-boba-tea-challenge-2025.html</link>
+            <pubDate>
+                Tue, 28 Jan 2025 15:54:32 +0000
+            </pubDate>
+        </item>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/blog/markdown-cheat-sheet.html</guid>
+            <title>Markdown cheat sheet</title>
+            <description>
+                Markdown is a lightweight markup language that lets you add formatting
+                elements to plaintext documents. Its main advantage is readability and simple syntax.
+            </description>
+            <link>https://sqvrltastic.github.io/blog/markdown-cheat-sheet.html</link>
+            <pubDate>
+                Tue, 28 Jan 2025 14:52:32 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/gallery/vermintide-angry-kerillian-doodle.html</guid>
