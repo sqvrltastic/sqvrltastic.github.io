@@ -14,9 +14,23 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Tue, 28 Jan 2025 15:54:32 +0000
+            Thu, 30 Jan 2025 17:45:56 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #9</title>
+            <description>
+                <p>Crazy to think that January is already ending.
+                 But, in any case, in today's update I added a whole 
+                 new section to my website: <a href="https://sqvrltastic.github.io/links">Links!</a></p>
+                <p>I will be sharing other indie websites there, as well as resources 
+                that I find useful and just cool and funny stuff!</p>
+            </description>
+            <pubDate>
+                Thu, 30 Jan 2025 17:45:56 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/gallery/montenegro-chan-boba-tea-challenge-2025.html</guid>

@@ -51,6 +51,39 @@ ul > li::marker {
   content: "\003E \0020"/ "";
 }
 
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+header {
+  margin: 2rem auto;
+}
+
+header > pre {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: medium;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+main {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
 details {
   margin: 1rem 0;
   border: 0.01rem solid lightgray;
@@ -80,41 +113,25 @@ summary:active {
 }
 
 figure {
+  padding: 1.5rem;
   margin: 1rem 0;
+  border: 0.01rem solid black;
 }
 
-pre {
-  white-space: pre-wrap;
-  word-break: break-all;
+figcaption {
+  margin-top: 0.3rem;
 }
 
-header {
-  margin: 2rem auto;
+figure img {
+  border: 0.1rem solid transparent;
 }
 
-header > pre {
-  text-align: center;
-  font-size: medium;
-  font-family: "Courier New", Courier, monospace;
+figure img:hover {
+  border: 0.1rem solid hotpink;
 }
 
-nav {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-main {
-  max-inline-size: 40rem;
-  margin: 0 auto;
-}
-
-footer {
-  font-size: 0.7rem;
-  text-align: center;
-}
-
-.mnav {
-  display: none;
+figure > img:active {
+  border: 0.1rem solid white;
 }
 
 /* Ocasionally used text styles */
@@ -233,10 +250,6 @@ footer {
   margin: 0;
 }
 
-.artwork-container {
-  max-inline-size: fit-content;
-}
-
 /* 88x31 buttons showcase */
 
 .buttons {
@@ -347,14 +360,6 @@ footer {
 /* CSS for smaller screens */
 
 @media (max-width: 770px) {
-  .dnav {
-    display: none;
-  }
-
-  .mnav {
-    display: block;
-  }
-
   header > pre {
     font-size: small;
   }
@@ -371,7 +376,7 @@ footer {
     font-size: x-small;
   }
 
-  .mnav {
+  nav {
     font-size: small;
   }
 
@@ -392,7 +397,11 @@ footer {
     font-size: 2vmin;
   }
 
-  .mnav {
+  nav {
     font-size: 0.7rem;
+  }
+
+  figure {
+    padding: 1rem;
   }
 }
