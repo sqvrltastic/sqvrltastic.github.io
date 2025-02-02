@@ -355,7 +355,8 @@ figure > img:active {
     margin: 1rem 0.5rem;
   }
 
-  .gallery {
+  .gallery,
+  .featured {
     gap: 0.3rem;
   }
 }
