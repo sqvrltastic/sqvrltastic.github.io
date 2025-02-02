@@ -250,36 +250,6 @@ figure > img:active {
   margin: 0;
 }
 
-/* 88x31 buttons showcase */
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem;
-  margin: 1rem 0;
-}
-
-.buttons > a {
-  display: block;
-  border: 0.1rem solid transparent;
-}
-
-.buttons > a:hover {
-  border: 0.1rem solid hotpink;
-}
-
-.buttons > a:active {
-  border: 0.1rem solid white;
-}
-
-.buttons img {
-  display: block;
-}
-
-.buttons > img {
-  border: 0.1rem solid transparent;
-}
-
 /* Responsive big banner */
 
 .responsive-img {
@@ -330,6 +300,7 @@ figure > img:active {
   display: block;
   margin: 1.4rem auto 1.2rem;
   mix-blend-mode: multiply;
+  width: 75%;
 }
 
 .landing > p {
@@ -383,6 +354,10 @@ figure > img:active {
   details > *:not(summary) {
     margin: 1rem 0.5rem;
   }
+
+  .gallery {
+    gap: 0.3rem;
+  }
 }
 
 @media (max-width: 510px) {
@@ -395,10 +370,6 @@ figure > img:active {
 @media (max-width: 490px) {
   header > pre {
     font-size: 2vmin;
-  }
-
-  nav {
-    font-size: 0.7rem;
   }
 
   figure {
