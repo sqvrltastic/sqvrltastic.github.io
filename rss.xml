@@ -14,9 +14,26 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 30 Jan 2025 17:45:56 +0000
+            Tue, 04 Feb 2025 15:39:03 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #10</title>
+            <description>
+                <p>Minor website CSS changes! Just trying to make 
+                this website easier on the eyes. Also, I kept the 
+                main font being monospace, but now it will show 
+                as whatever default monospace font you have in your 
+                browser, not as Courier New like before.</p>
+                <p>Additionally, updated coding resources links 
+                and added “Images: figcaption vs alt. text” link 
+                under accessibility section.</p>
+            </description>
+            <pubDate>
+                Tue, 04 Feb 2025 15:39:03 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #9</title>
