@@ -345,24 +345,28 @@ figure > img:active {
 
 @media (max-width: 580px) {
   header > pre {
-    font-size: 0.7rem;
+    font-size: 70%;
   }
 
   nav,
   footer {
-    font-size: 0.7rem;
+    font-size: 70%;
   }
 
   main,
   h2,
   h3,
   h4 {
-    font-size: 0.9rem;
+    font-size: 90%;
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 160%;
     margin: 1.5rem auto;
+  }
+
+  hr {
+    margin: 1rem 0;
   }
 
   .icon {
