@@ -14,9 +14,21 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Sun, 09 Feb 2025 20:21:08 +0000
+            Sun, 09 Feb 2025 23:51:53 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/blog/steam-friend-requests-suck.html</guid>
+            <title>Steam friend requests suck</title>
+            <description>
+                Gamers just don't get it. I'm glad that you like my artwork, but I am not your friend.
+            </description>
+            <link>https://sqvrltastic.github.io/blog/steam-friend-requests-suck.html</link>
+            <pubDate>
+                Sun, 09 Feb 2025 23:51:53 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/blog/my-pc-died.html</guid>
