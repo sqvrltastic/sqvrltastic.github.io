@@ -14,9 +14,21 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Tue, 04 Feb 2025 15:39:03 +0000
+            Sun, 09 Feb 2025 20:21:08 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/blog/my-pc-died.html</guid>
+            <title>My PC died!!!</title>
+            <description>
+                It's over. Press F in chat.
+            </description>
+            <link>https://sqvrltastic.github.io/blog/my-pc-died.html</link>
+            <pubDate>
+                Sun, 09 Feb 2025 20:21:08 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #10</title>
