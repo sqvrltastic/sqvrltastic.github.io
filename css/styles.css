@@ -338,12 +338,12 @@ figure > a > img:active {
 /* CSS for 404 page */
 
 .fourofour {
+  text-align: center;
   inline-size: fit-content;
   block-size: fit-content;
   position: absolute;
   inset: 0;
   margin: auto;
-  text-align: center;
 }
 
 .fourofour > h1 {
@@ -365,18 +365,12 @@ figure > a > img:active {
 
 @media (max-width: 500px) {
   header > pre {
-    font-size: 30%;
+    font-size: 0.6rem;
     margin-block-end: 0.9rem;
   }
 
-  h1 {
-    font-size: 120%;
-    max-inline-size: 17rem;
-    margin: 1.2rem auto;
-  }
-
   nav, footer {
-    font-size: 100%;
+    font-size: 0.9rem;
   }
 
   footer {
@@ -385,11 +379,17 @@ figure > a > img:active {
   }
 
   main, h2, h3, h4{
-    font-size: 110%;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    max-inline-size: 17rem;
+    margin: 1.2rem auto;
   }
 
   code {
-    font-size: 90%;
+    font-size: 0.8rem;
   }
 
   hr {
@@ -397,13 +397,13 @@ figure > a > img:active {
   }
 
   .rss-btn {
-    font-size: 100%;
+    font-size: 1rem;
     gap: 0.4rem;
     padding: 0.4rem;
   }
 
   .btn-code {
-    font-size: 90%;
+    font-size: 0.9rem;
   }
 
   details > *:not(summary) {
