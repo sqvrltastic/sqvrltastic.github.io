@@ -5,12 +5,12 @@
 /* General styling */
 
 /* 
-Colors: 
-lightest: #c7ccd6
-medium-light: #afb9c5
-medium: #a3adbd
-medium-dark: #516881
-darkest: #1a2033
+Color palette: 
+lightest: #c7ccd6 - background
+medium-light: #afb9c5 - code snippet background
+medium: #a3adbd - background for some UI elements
+medium-dark: #516881 - hover state for links and image borders
+darkest: #1a2033 - text
 */
 
 body {
@@ -19,36 +19,47 @@ body {
   font-family: monospace;
 }
 
+header, main, footer {
+  max-inline-size: 40rem;
+  margin: 0 auto;
+}
+
 header > pre {
-  text-align: center;
   font-size: 0.85rem;
-  margin: 1.5rem auto;
+  inline-size: fit-content;
+  margin: 0 auto 1.5rem;
 }
 
 nav {
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 0.5rem;
   font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.5rem;
 }
 
 main {
-  max-inline-size: 40rem;
-  margin: 0 auto;
   font-size: 1.2rem;
 }
 
 footer {
-  margin-top: 1rem;
   font-size: 0.9rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.7rem;
+  margin-block-start: 1.5rem;
+}
+
+footer > p {
+  margin: 0;
+  align-self: center;
 }
 
 h1 {
-  margin: 2rem auto;
+  font-size: 1.4rem;
   text-align: center;
-  max-width: 25rem;
-  font-size: 1.8rem;
+  max-inline-size: 27rem;
+  margin: 1.6rem auto;
 }
 
 h2 {
@@ -57,8 +68,8 @@ h2 {
 
 h3,
 h4 {
-  font-weight: normal;
   font-size: 1.2rem;
+  font-weight: normal;
 }
 
 a {
@@ -75,7 +86,7 @@ a:active {
 
 hr {
   border: none;
-  border-block-start: 0.2rem dotted #afb9c5;
+  border-block-start: 0.2rem dotted #a3adbd;
   margin: 1.5rem 0;
 }
 
@@ -89,17 +100,17 @@ pre {
 }
 
 code {
-  background-color: #afb9c5;
-  border-radius: 0.4rem;
   font-size: 1rem;
-  padding: 0.04rem 0.1rem;
+  background-color: #afb9c5;
   display: inline-block;
-  max-width: fit-content;
+  max-inline-size: fit-content;
+  padding: 0.04rem 0.1rem;
+  border-radius: 0.4rem;
 }
 
 details {
   margin: 1rem 0;
-  border: 0.2rem solid #afb9c5;
+  border: 0.2rem solid #a3adbd;
 }
 
 details > *:not(summary) {
@@ -108,7 +119,6 @@ details > *:not(summary) {
 
 summary {
   padding: 0.5rem;
-  text-decoration: underline;
 }
 
 summary > h3 {
@@ -117,7 +127,7 @@ summary > h3 {
 
 summary:hover {
   cursor: pointer;
-  background-color: #afb9c5;
+  background-color: #a3adbd;
 }
 
 summary:active {
@@ -127,22 +137,22 @@ summary:active {
 figure {
   padding: 1.25rem;
   margin: 1rem auto;
-  border: 0.2rem solid #afb9c5;
+  border: 0.2rem solid #a3adbd;
 }
 
 figcaption {
-  margin-top: 0.3rem;
+  margin-block-start: 0.3rem;
 }
 
-figure img {
-  border: 0.1rem solid #afb9c5;
+figure > a > img {
+  border: 0.1rem solid #a3adbd;
 }
 
-figure img:hover {
+figure > a > img:hover {
   border: 0.1rem solid #516881;
 }
 
-figure > img:active {
+figure > a > img:active {
   border: 0.1rem solid white;
 }
 
@@ -162,10 +172,6 @@ figure > img:active {
 
 .text-breakall {
   word-break: break-all;
-}
-
-.icon {
-  height: 1rem;
 }
 
 .spoiler {
@@ -198,14 +204,36 @@ figure > img:active {
   font-weight: bold;
 }
 
+/* Icon */
+
+.icon {
+  block-size: 0.9rem;
+}
+
+/* Footer RSS feed button */
+
+.rss-btn {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  inline-size: fit-content;
+  padding: 0.5rem;
+  border: 0.15rem solid #1a2033;
+}
+
+.rss-btn > img {
+  block-size: 1.2rem;
+}
+
 /* Gallery */
 
 .gallery,
 .featured {
   display: grid;
+  gap: 0.5rem;
   inline-size: fit-content;
   block-size: fit-content;
-  gap: 0.5rem;
 }
 
 .gallery {
@@ -217,15 +245,14 @@ figure > img:active {
 }
 
 .preview {
-  overflow: hidden;
   position: relative;
-  border: 0.1rem solid #afb9c5;
   display: block;
+  border: 0.1rem solid #a3adbd;
+  overflow: hidden;
 }
 
 .preview:hover {
   border: 0.1rem solid #516881;
-  cursor: pointer;
 }
 
 .preview:active {
@@ -237,33 +264,26 @@ figure > img:active {
   block-size: 100%;
 }
 
-.full {
-  inline-size: fit-content;
-  block-size: fit-content;
+.artwork > a > img {
   display: block;
-  margin: 0 auto;
-}
-
-.full > img {
   max-inline-size: 100%;
   max-block-size: 30rem;
-  display: block;
-  margin: 0;
+  margin: 0 auto
 }
 
 /* Code box element */
 
 .btn-code {
-  max-inline-size: 15rem;
-  block-size: 4rem;
-  padding: 0.5rem;
-  border: solid 0.1rem #1a2033;
-  background-color: white;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-size: 0.65rem;
   word-break: break-all;
-  margin-top: 0.7rem;
+  max-inline-size: 15rem;
+  block-size: 4rem;
+  background-color: white;
+  border: solid 0.1rem #1a2033;
+  padding: 0.5rem;
+  margin-block-start: 0.7rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .btn-code > code {
@@ -276,48 +296,41 @@ figure > img:active {
 /* Responsive big banner */
 
 .responsive-img {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
 }
 
 /* CSS for landing page */
 
 .landing {
-  inline-size: fit-content;
-  block-size: fit-content;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.9rem;
   text-align: center;
+  inline-size: 15rem;
+  block-size: fit-content;
   position: absolute;
   inset: 0;
   margin: auto;
   padding: 2rem;
-  max-inline-size: 15rem;
   border: solid 0.1rem #1a2033;
 }
 
 .landing > pre {
-  text-align: center;
-  font-size: 0.9rem;
-  inline-size: fit-content;
   margin: 0 auto;
 }
 
 .landing > img {
-  display: block;
-  margin: 1.4rem auto 1.2rem;
   mix-blend-mode: multiply;
-  width: 75%;
+  display: block;
+  inline-size: 75%;
+  margin: 1.4rem auto 1.2rem;
 }
 
 .landing > p {
-  margin: 0 auto;
   max-inline-size: 13rem;
-  font-size: 0.9rem;
+  margin: 0 auto;
 }
 
 .landing > a {
-  font-size: x-large;
+  font-size: 1.5rem;
   display: block;
   margin: 1rem auto 0;
 }
@@ -335,7 +348,7 @@ figure > img:active {
 
 .fourofour > h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 .fourofour > p {
@@ -344,40 +357,53 @@ figure > img:active {
 
 /* CSS for smaller screens */
 
-@media (max-width: 720px) {
+@media (max-width: 660px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 500px) {
   header > pre {
-    font-size: 70%;
-  }
-
-  nav,
-  footer {
-    font-size: 70%;
-  }
-
-  main,
-  h2,
-  h3,
-  h4 {
-    font-size: 90%;
+    font-size: 2vmin;
+    margin-block-end: 0.9rem;
   }
 
   h1 {
-    font-size: 160%;
-    margin: 1.5rem auto;
+    font-size: 120%;
+    max-inline-size: 17rem;
+    margin: 1.2rem auto;
+  }
+
+  nav, footer {
+    font-size: 100%;
+  }
+
+  footer {
+    gap: 0.5rem;
+    margin-block-start: 1rem;
+  }
+
+  main, h2, h3, h4{
+    font-size: 110%;
+  }
+
+  code {
+    font-size: 90%;
   }
 
   hr {
-    margin: 1rem 0;
+    margin: 0.7rem 0;
   }
 
-  .icon {
-    height: 0.7rem;
+  .rss-btn {
+    font-size: 100%;
+    gap: 0.4rem;
+    padding: 0.4rem;
+  }
+
+  .btn-code {
+    font-size: 90%;
   }
 
   details > *:not(summary) {
@@ -391,11 +417,5 @@ figure > img:active {
 
   figure {
     padding: 1rem;
-  }
-}
-
-@media (max-width: 490px) {
-  header > pre {
-    font-size: 2vmin;
   }
 }

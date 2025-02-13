@@ -14,9 +14,23 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Sun, 09 Feb 2025 23:51:53 +0000
+            Thu, 13 Feb 2025 17:36:36 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #11</title>
+            <description>
+                My PC is still broken... In the meantime, I rewrote and cleaned up a lot of CSS code on the website.
+                For you this mostly means that there are some minor layout changes. 
+                Also, I added a big RSS feed button down in the footer section 
+                and a simple guide on how to subscribe to this website's updates right 
+                there as well. 
+            </description>
+            <pubDate>
+                Thu, 13 Feb 2025 17:36:36 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/blog/steam-friend-requests-suck.html</guid>
