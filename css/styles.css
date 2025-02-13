@@ -365,7 +365,7 @@ figure > a > img:active {
 
 @media (max-width: 500px) {
   header > pre {
-    font-size: 70%;
+    font-size: 30%;
     margin-block-end: 0.9rem;
   }
 
