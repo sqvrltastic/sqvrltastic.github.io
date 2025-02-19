@@ -14,9 +14,22 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Thu, 13 Feb 2025 17:36:36 +0000
+            Wed, 19 Feb 2025 15:32:26 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <title>Website update #12</title>
+            <description>
+                <p>Deleted two blogpost (I just didn't like them, I feel like they were too low effort).</p>
+                <p>Changed my whole gallery template in HUGO to make it fully automated. 
+                This shouldn't affect anything too much for the end user though so you won't see many changes.</p>
+                <p>Fixed some broken links, changed some stuff, yada yada, the usual. Not worth mentioning here.</p>
+            </description>
+            <pubDate>
+                Wed, 19 Feb 2025 15:32:26 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #11</title>
@@ -29,30 +42,6 @@
             </description>
             <pubDate>
                 Thu, 13 Feb 2025 17:36:36 +0000
-            </pubDate>
-        </item>
-
-        <item>
-            <guid>https://sqvrltastic.github.io/blog/steam-friend-requests-suck.html</guid>
-            <title>Steam friend requests suck</title>
-            <description>
-                Gamers just don't get it. I'm glad that you like my artwork, but I am not your friend.
-            </description>
-            <link>https://sqvrltastic.github.io/blog/steam-friend-requests-suck.html</link>
-            <pubDate>
-                Sun, 09 Feb 2025 23:51:53 +0000
-            </pubDate>
-        </item>
-
-        <item>
-            <guid>https://sqvrltastic.github.io/blog/my-pc-died.html</guid>
-            <title>My PC died!!!</title>
-            <description>
-                It's over. Press F in chat.
-            </description>
-            <link>https://sqvrltastic.github.io/blog/my-pc-died.html</link>
-            <pubDate>
-                Sun, 09 Feb 2025 20:21:08 +0000
             </pubDate>
         </item>
 
