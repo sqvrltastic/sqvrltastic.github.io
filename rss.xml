@@ -14,9 +14,26 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Wed, 19 Feb 2025 15:32:26 +0000
+            Wed, 26 Feb 2025 13:39:38 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/vermintide-kerillian-smug-asuka.html</guid>
+            <title>Kerillian redraw as smug Asuka</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/vermintide-kerillian-smug-asuka.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/vermintide-kerillian-smug-asuka.jpg" 
+                type="image/jpeg" 
+                length="237089"
+            />
+            <link>https://sqvrltastic.github.io/gallery/vermintide-kerillian-smug-asuka.html</link>
+            <pubDate>
+                Wed, 26 Feb 2025 13:39:38 +0000
+            </pubDate>
+        </item>
 
         <item>
             <title>Website update #12</title>
