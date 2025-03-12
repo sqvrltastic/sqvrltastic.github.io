@@ -14,9 +14,26 @@
         <ttl>1440</ttl>
         <webMaster>sqvrltastic@gmail.com</webMaster>
         <lastBuildDate>
-            Tue, 04 Mar 2025 23:30:18 +0000
+            Wed, 12 Mar 25 15:46:48 +0000
         </lastBuildDate>
         <language>en-us</language>
+
+        <item>
+            <guid>https://sqvrltastic.github.io/gallery/vermintide-kerillian-drinking-leaf-lovers.html</guid>
+            <title>Kerillian drinking Leaf Lover's Special beer</title>
+            <description>
+            <img src="https://sqvrltastic.github.io/images/full/vermintide-kerillian-drinking-leaf-lovers.jpg" />
+            </description>
+            <enclosure 
+                url="https://sqvrltastic.github.io/images/full/vermintide-kerillian-drinking-leaf-lovers.jpg" 
+                type="image/jpeg" 
+                length="879239"
+            />
+            <link>https://sqvrltastic.github.io/gallery/vermintide-kerillian-drinking-leaf-lovers.html</link>
+            <pubDate>
+                Wed, 12 Mar 25 15:46:48 +0000
+            </pubDate>
+        </item>
 
         <item>
             <guid>https://sqvrltastic.github.io/gallery/vermintide-kerillian-thinking-face.html</guid>
