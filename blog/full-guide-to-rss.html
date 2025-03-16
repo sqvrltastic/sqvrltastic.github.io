@@ -13,7 +13,7 @@
 <a href=/contact.html>Contact</a> |
 <a href=/links>Links</a> |
 <a href=/buttons.html>Buttons</a> |
-<a href=/updates.html>Updates</a> |</p></nav></header><main><h1>Full guide to RSS</h1><p><strong>Last updated:</strong> January 21st 2025</p><h2>Table of content</h2><ul><li><a href=#what-is-rss>What is RSS?</a></li><li><a href=#why-use-rss>Why use RSS?</a></li><li><a href=#for-users>For users: How to use RSS</a></li><li><a href=#for-developers>For developers: How to add an RSS feed to your website</a></li></ul><hr><h2 id=what-is-rss>What is RSS?</h2><p>From
+<a href=/updates.html>Updates</a> |</p></nav></header><main><h1>Full guide to RSS</h1><p><strong>Last updated:</strong> March 16th 2025</p><h2>Table of content</h2><ul><li><a href=#what-is-rss>What is RSS?</a></li><li><a href=#why-use-rss>Why use RSS?</a></li><li><a href=#for-users>For users: How to use RSS</a></li><li><a href=#for-developers>For developers: How to add an RSS feed to your website</a></li></ul><hr><h2 id=what-is-rss>What is RSS?</h2><p>From
 <a href=https://en.wikipedia.org/wiki/RSS target=_blank rel="noopener noreferrer">Wikipedia:</a></p><blockquote cite=https://en.wikipedia.org/wiki/RSS><i>"RSS (which stands for "Really Simple Syndication") is a web feed that
 allows users and applications to access updates to websites in a
 standardized, computer-readable format."</i></blockquote><p>In layman terms, basically, RSS is a website's news feed that is standardized
@@ -271,19 +271,38 @@ feed with posts... Below is an example of how that might look like.</p><details>
             &#x3C;/item&#x3E;</span>
     
         <span class=text-colored>&#x3C;/channel&#x3E;
-    &#x3C;/rss&#x3E;</span></code></pre></details><p><strong>Tip about favicons:</strong> Some RSS readers seem to completely
+    &#x3C;/rss&#x3E;</span></code></pre></details><p><strong>Tip:</strong> if you want to include some
+<strong>special characters</strong> in your RSS feed, like "&" for example, make sure to write
+them as a HTML entity, so as "&#x26;#x26;" (without the quotation marks) in
+this case. Here is a basic
+<a href=https://mothereff.in/html-entities target=_blank rel="noopener noreferrer">HTML entity encoder/decoder</a>.</p><p><i>After you have created the RSS feed itself, there is still some extra things you can do...</i></p><p><strong>Regarding favicons:</strong> Some RSS readers seem to completely
 ignore favicons, while some don't, it's a bit inconsistent. Although, after
 some testing, I found that the most sure way to have an RSS reader actually
 recognize and fetch your website's favicon is <em>to make sure</em> it's
 located in the root directory of your website and that it's named something
-like "favicon.ico".</p><p>Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
+like "favicon.ico".</p><p><strong>Linking your RSS feed in the <code>&lt;head></code></strong>:
+After you have created your RSS feed, you can add a button to
+your site linking to it. But, in addition to that, you can
+also add a <code>&lt;link></code> tag inside your website's
+<code>&lt;head></code> tag and link your RSS feed there as well.
+You can even have multiple feeds, just give them descriptive
+names that make sense! See the code below...</p><details><summary>Linking the RSS feed</summary><pre><code>&#x3C;link 
+    rel=&#x22;alternate&#x22; 
+    type=&#x22;application/rss+xml&#x22; 
+    title=&#x22;<i>RSS feed for my site</i>&#x22; 
+    href=&#x22;https://<i>my-website</i>/rss.xml&#x22; 
+/&#x3E;</code></pre></details><p>What it does is it makes it your RSS feed autodiscoverable...
+Sorta. Well, back in the ye olden days, most browsers had a
+built-in RSS reader and they could automatically detect if a
+website had RSS feed. Nowadays, that functionality is mostly
+gone (shame!), but, fret not, at least for Firefox, there are
+extensions such as <a href>Awesome RSS</a> that returns
+that functionality! After you install it, if a website has a
+fetchable RSS feed, at the corner of your browser's address
+bar you will see an RSS icon.</p><p>Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
 RSS readers, remember to occasionally unsubscribe and resubscribe and
 <em>clear cache</em>! Because often you just need to refresh it for your
-changes to show up.</p><p>Oh and lastly, if you want to include some
-<strong>special characters</strong> like "&" for example, make sure to write
-them as a HTML entity, so as "&#x26;#x26;" (without the quotation marks) in
-this case. Here is a basic
-<a href=https://mothereff.in/html-entities target=_blank rel="noopener noreferrer">HTML entity encoder/decoder </a>.</p><p>You can read more about the official RSS documentation on
+changes to show up.</p><p>You can read more about the official RSS documentation on
 <a href=https://www.rssboard.org/rss-specification target=_blank rel="noopener noreferrer">RSS Advisory Board</a>.</p><hr><p><i>P.S. If you have any suggestions on how to improve this guide, or you spot
 any mistakes, you can contact me through my mail that is linked in the
 <a href=../contact.html>contact</a> page.</i></p><p class=text-center><a href=#>| Back to top |</a></p></main><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><a class=rss-btn href=/rss.xml target=_blank rel="noopener noreferrer"><img src=/images/icons/icon-rss.avif alt="RSS feed icon" width=64 height=64>
