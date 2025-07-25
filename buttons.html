@@ -1,5 +1,5 @@
 <!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="This website's buttons and banners. If you find this website interesting and/or useful and want to share it with others, you can put one of these banners on your own website."><meta author=sqvrltastic><title>Buttons | Sqvrltastic Art Archive</title>
-<link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.b234114fd8377760c6ac213dc3fe02f25008aef5b5e280dae55bf3ffc4e00ddb.css><link rel=alternate type=application/rss+xml title="RSS feed for
+<script>(function(){const e=localStorage.getItem("theme");if(e)document.documentElement.setAttribute("data-theme",e);else{const e=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",e?"dark":"light")}})()</script><link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.265ca2a4500c781ba9c0ae563d28a12534476f2ff0f319eceb230656897b62e8.css><link rel=alternate type=application/rss+xml title="RSS feed for
   Sqvrltastic Art Archive" href=https://sqvrltastic.art/rss.xml></head><body><header><a href=#main class=skip>Skip to main content</a><p class=logo><strong>Sqvrltastic Art Archive</strong></p><nav><a href=/>Home</a>
 <a href=/updates.html>Updates</a>
 <a href=/gallery>Gallery</a>
@@ -7,7 +7,9 @@
 <a href=/links>Links</a>
 <a href=/about.html>About</a>
 <a href=/buttons.html>Buttons</a>
-<a href=/rss.xml target=_blank>RSS</a></nav></header><div class=divider></div><main id=main><h1>Buttons</h1><p>If you find this website interesting and/or useful and want to share it with
+<a href=/rss.xml target=_blank>RSS</a>
+<button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon src=./images/icons/sun.png alt="Light theme ON"></button></nav></header><div class=divider></div><main id=main><h1>Buttons</h1><p>If you find this website interesting and/or useful and want to share it with
 others, you can put one of these 90s-style banners on your own website and
 link back to me. Please do not hotlink the images and thank you.</p><details><summary>What the hell are buttons?!</summary><p>Buttons are small images, most commonly 88 by 31 pixel in size. They can be
 static or animated. They are a way for webmasters to exchange links in style
@@ -18,4 +20,4 @@ and create an image-link that links to this website.</p></details><h2>88x31</h2>
 <img src=./images/buttons/button-sqvrltastic3.png alt='A standard 88 by 31 pixel button for a website "Sqvrltastic Art Archive"' width=88 height=31><h2>468x60</h2><img class=responsive-img src=./images/buttons/big-banner-sqvrltastic.jpg alt='A standard 468 by 60 pixel banner for a website "Sqvrltastic Art
   Archive"'>
 <img class=responsive-img src=./images/buttons/big-banner-sqvrltastic2.jpg alt='A standard 468 by 60 pixel banner for a website "Sqvrltastic Art
-  Archive"'></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer></body></html>
+  Archive"'></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer><script>const toggle=document.getElementById("theme-toggle"),icon=document.getElementById("theme-icon"),html=document.documentElement,sunIcon="/images/icons/sun.png",moonIcon="/images/icons/moon.png";toggle.addEventListener("click",()=>{const t=html.getAttribute("data-theme"),e=t==="dark"?"light":"dark";html.setAttribute("data-theme",e),localStorage.setItem("theme",e),icon.src=e==="dark"?moonIcon:sunIcon,icon.alt=e==="dark"?"Dark theme ON":"Light theme ON"});const initialTheme=html.getAttribute("data-theme");icon.src=initialTheme==="dark"?moonIcon:sunIcon,icon.alt=initialTheme==="dark"?"Dark theme ON":"Light theme ON"</script></body></html>

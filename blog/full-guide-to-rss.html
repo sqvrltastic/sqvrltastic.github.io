@@ -1,5 +1,5 @@
 <!doctype html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="What is RSS, why you should use it and how to implement it on your own website, explained."><meta author=sqvrltastic><title>Full guide to RSS | Sqvrltastic Art Archive</title>
-<link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.b234114fd8377760c6ac213dc3fe02f25008aef5b5e280dae55bf3ffc4e00ddb.css><link rel=alternate type=application/rss+xml title="RSS feed for
+<script>(function(){const e=localStorage.getItem("theme");if(e)document.documentElement.setAttribute("data-theme",e);else{const e=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",e?"dark":"light")}})()</script><link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.265ca2a4500c781ba9c0ae563d28a12534476f2ff0f319eceb230656897b62e8.css><link rel=alternate type=application/rss+xml title="RSS feed for
   Sqvrltastic Art Archive" href=https://sqvrltastic.art/rss.xml></head><body><header><a href=#main class=skip>Skip to main content</a><p class=logo><strong>Sqvrltastic Art Archive</strong></p><nav><a href=/>Home</a>
 <a href=/updates.html>Updates</a>
 <a href=/gallery>Gallery</a>
@@ -7,7 +7,9 @@
 <a href=/links>Links</a>
 <a href=/about.html>About</a>
 <a href=/buttons.html>Buttons</a>
-<a href=/rss.xml target=_blank>RSS</a></nav></header><div class=divider></div><main id=main><h1>Full guide to RSS</h1><p><strong>Last updated:</strong> March 16th 2025</p><h2>Table of content</h2><ul><li><a href=#what-is-rss>What is RSS?</a></li><li><a href=#why-use-rss>Why use RSS?</a></li><li><a href=#for-users>For users: How to use RSS</a></li><li><a href=#for-developers>For developers: How to add an RSS feed to your website</a></li></ul><hr><h2 id=what-is-rss>What is RSS?</h2><p>From
+<a href=/rss.xml target=_blank>RSS</a>
+<button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon src=./images/icons/sun.png alt="Light theme ON"></button></nav></header><div class=divider></div><main id=main><h1>Full guide to RSS</h1><p><strong>Last updated:</strong> March 16th 2025</p><h2>Table of content</h2><ul><li><a href=#what-is-rss>What is RSS?</a></li><li><a href=#why-use-rss>Why use RSS?</a></li><li><a href=#for-users>For users: How to use RSS</a></li><li><a href=#for-developers>For developers: How to add an RSS feed to your website</a></li></ul><hr><h2 id=what-is-rss>What is RSS?</h2><p>From
 <a href=https://en.wikipedia.org/wiki/RSS target=_blank rel="noopener noreferrer">Wikipedia:</a></p><blockquote cite=https://en.wikipedia.org/wiki/RSS><i>"RSS (which stands for "Really Simple Syndication") is a web feed that
 allows users and applications to access updates to websites in a
 standardized, computer-readable format."</i></blockquote><p>In layman terms, basically, RSS is a website's news feed that is standardized
@@ -300,4 +302,4 @@ changes to show up.</p><p>You can read more about the official RSS documentation
 <a href=https://www.rssboard.org/rss-specification target=_blank rel="noopener noreferrer">RSS Advisory Board</a>.</p><hr><p><i>P.S. If you have any suggestions on how to improve this guide, or you spot
 any mistakes, you can contact me through my mail that is linked in the
 <a href=../contact.html>contact</a> page.</i></p><p class=text-center><a href=#><span aria-hidden=true>[ </span>Back to top<span aria-hidden=true>
-]</span></a></p></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer></body></html>
+]</span></a></p></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer><script>const toggle=document.getElementById("theme-toggle"),icon=document.getElementById("theme-icon"),html=document.documentElement,sunIcon="/images/icons/sun.png",moonIcon="/images/icons/moon.png";toggle.addEventListener("click",()=>{const t=html.getAttribute("data-theme"),e=t==="dark"?"light":"dark";html.setAttribute("data-theme",e),localStorage.setItem("theme",e),icon.src=e==="dark"?moonIcon:sunIcon,icon.alt=e==="dark"?"Dark theme ON":"Light theme ON"});const initialTheme=html.getAttribute("data-theme");icon.src=initialTheme==="dark"?moonIcon:sunIcon,icon.alt=initialTheme==="dark"?"Dark theme ON":"Light theme ON"</script></body></html>
