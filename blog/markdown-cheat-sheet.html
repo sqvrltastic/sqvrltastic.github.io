@@ -1,0 +1,27 @@
+<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Markdown is a lightweight markup language that lets you add formatting elements to plaintext documents. Its main advantage is readability and simple syntax."><meta author=sqvrltastic><title>Markdown cheat sheet | Sqvrltastic Art Archive</title>
+<script>(function(){const e=localStorage.getItem("theme");if(e)document.documentElement.setAttribute("data-theme",e);else{const e=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",e?"dark":"light")}})()</script><link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.1b86a5e6c62decf083c8b94238fed5e9305fce80eebc4fba5040df26f7556d7a.css><link rel=alternate type=application/rss+xml title="RSS feed for
+  Sqvrltastic Art Archive" href=http://localhost:1313/rss.xml></head><body><header><a href=#main class=skip>Skip to main content</a><noscript><p class=text-center><i>No JavaScript? Based. It's only required for theme switcher and embedded fonts.</i></p></noscript><p class=logo><strong>Sqvrltastic Art Archive</strong></p><nav><a href=/>Home</a>
+<a href=/updates.html>Updates</a>
+<a href=/gallery>Gallery</a>
+<a href=/blog>Blog</a>
+<a href=/links>Links</a>
+<a href=/about.html>About</a>
+<a href=/buttons.html>Buttons</a>
+<a href=/rss.xml target=_blank>RSS</a>
+<button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon src=./images/icons/sun.png alt="Light theme ON"></button></nav></header><div class=divider></div><main id=main><h1 id=markdown-cheat-sheet>Markdown cheat sheet</h1><p><strong>Last updated:</strong> January 31st 2025</p><p>Markdown is a lightweight markup language that lets you add formatting
+elements to plaintext documents. It's used by a lot of
+<abbr title="Static Site Generators">SSGs</abbr> (like mine, HUGO), but also
+in places like Discord and Reddit among others. Its main advantage is
+readability and simple syntax.</p><p>Different implementations of Markdown vary a bit between software and
+platforms. This guide is mostly from my own perspective and includes info
+about features that I personally use the most.</p><p>You can download an
+<a href=../documents/example.md download target=_blank rel="noopener noreferrer">example.md</a>
+file to see basic Markdown syntax in action for yourself!</p><hr><h2>Basic text formatting</h2><p>You separate paragraphs by adding an empty line in between them. You can also
+add a bit of basic formatting to your text, like shown below.</p><p>_<em>italics</em>_ or <em>*italics*</em></p><p><strong>**bold**</strong></p><p><s>~strike-through~</s> or <s>~~strike-through~~</s></p><p><code>`code`</code></p><p><span class=spoiler>||spoiler||</span> (Discord only), or
+<span class=spoiler>>!spoilers!<</span>
+(Reddit only).</p><blockquote>>Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+malesuada pellentesque erat quis pulvinar. Quisque sed sagittis diam.
+Phasellus commodo mattis libero, et luctus tellus porta eu.</blockquote><hr><h2>Headings</h2><p>You should put a blank line before and after the heading. Also, examples below
+are not actual semantic HTML headers. It's just text formatted to look like
+headings that I'm using to illustrate my point.</p><p class=h1># Heading 1</p><p class=h2>## Heading 2</p><p class=h3>### Heading 3</p><p class=h4>#### Heading 4</p><hr><h2>Links</h2><p><a href=#>link</a></p><p>[link text](link URL)</p><hr><h2>Lists</h2><h3>Ordered list:</h3><p>1. first<br>2. second<br>3. third<br></p><h3>Unordered list:</h3><p>- first<br>- second<br>- third<br></p><p>or:</p><p>* first<br>* second<br>* third<br></p><p>or, <em>sometimes:</em></p><p>+ first<br>+ second<br>+ third<br></p><hr><h2>Other stuff</h2><h3>Horizontal rule (separator):</h3><p>--- or ***</p><h3>Image:</h3><p>![alt text](/path/to/image.jpg)</p></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer><script>const toggle=document.getElementById("theme-toggle"),icon=document.getElementById("theme-icon"),html=document.documentElement,sunIcon="/images/icons/sun.png",moonIcon="/images/icons/moon.png";toggle.addEventListener("click",()=>{const t=html.getAttribute("data-theme"),e=t==="dark"?"light":"dark";html.setAttribute("data-theme",e),localStorage.setItem("theme",e),icon.src=e==="dark"?moonIcon:sunIcon,icon.alt=e==="dark"?"Dark theme ON":"Light theme ON"});const initialTheme=html.getAttribute("data-theme");icon.src=initialTheme==="dark"?moonIcon:sunIcon,icon.alt=initialTheme==="dark"?"Dark theme ON":"Light theme ON"</script></body></html>

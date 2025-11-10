@@ -1,0 +1,305 @@
+<!doctype html><html lang=en><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="What is RSS, why you should use it and how to implement it on your own website, explained."><meta author=sqvrltastic><title>Full guide to RSS | Sqvrltastic Art Archive</title>
+<script>(function(){const e=localStorage.getItem("theme");if(e)document.documentElement.setAttribute("data-theme",e);else{const e=window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",e?"dark":"light")}})()</script><link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/styles.min.1b86a5e6c62decf083c8b94238fed5e9305fce80eebc4fba5040df26f7556d7a.css><link rel=alternate type=application/rss+xml title="RSS feed for
+  Sqvrltastic Art Archive" href=http://localhost:1313/rss.xml></head><body><header><a href=#main class=skip>Skip to main content</a><noscript><p class=text-center><i>No JavaScript? Based. It's only required for theme switcher and embedded fonts.</i></p></noscript><p class=logo><strong>Sqvrltastic Art Archive</strong></p><nav><a href=/>Home</a>
+<a href=/updates.html>Updates</a>
+<a href=/gallery>Gallery</a>
+<a href=/blog>Blog</a>
+<a href=/links>Links</a>
+<a href=/about.html>About</a>
+<a href=/buttons.html>Buttons</a>
+<a href=/rss.xml target=_blank>RSS</a>
+<button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon src=./images/icons/sun.png alt="Light theme ON"></button></nav></header><div class=divider></div><main id=main><h1>Full guide to RSS</h1><p><strong>Last updated:</strong> March 16th 2025</p><h2>Table of content</h2><ul><li><a href=#what-is-rss>What is RSS?</a></li><li><a href=#why-use-rss>Why use RSS?</a></li><li><a href=#for-users>For users: How to use RSS</a></li><li><a href=#for-developers>For developers: How to add an RSS feed to your website</a></li></ul><hr><h2 id=what-is-rss>What is RSS?</h2><p>From
+<a href=https://en.wikipedia.org/wiki/RSS target=_blank rel="noopener noreferrer">Wikipedia:</a></p><blockquote cite=https://en.wikipedia.org/wiki/RSS><i>"RSS (which stands for "Really Simple Syndication") is a web feed that
+allows users and applications to access updates to websites in a
+standardized, computer-readable format."</i></blockquote><p>In layman terms, basically, RSS is a website's news feed that is standardized
+and which makes it possible for you to "subscribe" to your favorite website's
+news feed without actually creating an account there or signing up with your
+email for a newsletter or anything like that.</p><p>On its own, RSS feed appears as a file in an XML format with a weird looking
+code inside that looks similar to HTML. You will need an RSS feed reader
+program to actually convert that code to a human-readable feed.</p><p>There are <em>a lot</em> of RSS readers out there, both for PC and mobile,
+personally I use
+<a href="https://apps.microsoft.com/detail/9p71fc94lrh8?hl=en-us&gl=US" target=_blank rel="noopener noreferrer">"Fluent Reader"</a>
+on my Windows PC; you can get it from Microsoft Store. It's completely free
+and the code is open source. On mobile, I use
+<a href=https://f-droid.org/packages/com.nononsenseapps.feeder/ target=_blank rel="noopener noreferrer">"Feeder"</a>.</p><hr><h2 id=why-use-rss>Why use RSS?</h2><p>Because social media feeds suck. You always get irrelevant, garbage posts, ads
+and you often don't even see the posts from people that you follow because of
+the algorithm. Not to mention that, often you can get distracted and you have
+to manually check each website individually. With RSS, you have all of your
+subscriptions in one place.</p><p>You can subscribe to news sites, blogs, personal websites (if they have an RSS
+feed implemented) and also Tumblr blogs, subreddits, AO3, Bluesky profile
+feeds and even YouTube channels and many more! Though, take note that not
+every website takes its RSS feed seriously (shame!) and some of them are a bit
+poorly implemented.</p><p>Also, RSS is much better in terms of privacy and security because you don't
+need to give anyone your data, like in the case of signing up to an email
+newsletter with your email.</p><hr><h2 id=for-users>For users: How to use RSS</h2><p>As I said already, you will need an RSS feed reader program. On PC, you can
+use Fluent Reader like I do, or choose whichever one you like the most. They
+are mostly similar.</p><p>On mobile, as previously mentioned, I use Feeder, but you can just search for
+"RSS reader" in whichever app store you have installed on your phone. Also,
+there is the
+<a href=https://f-droid.org/ target=_blank rel="noopener noreferrer">F-Droid</a>
+app store that has only
+<abbr title="free open source software">FOSS</abbr> apps there, meaning, those
+are usually apps that don't track you and don't show you ads or beg you to buy
+in-app purchases. I personally use it and can fully recommend it.</p><p>First, go to the website you want to subscribe to. Look for the RSS logo that
+usually looks like a Wi-Fi symbol over an orange background (<img src=../images/icons/rss.svg alt width=15px height=15px>). Click on it; it should take you to the website's RSS feed. Simply copy
+the URL, launch your RSS feed reader, look for a button that says something
+along the lines of "add new source" and paste it there.</p><p>If you can't find the RSS icon, don't fret. Try looking for an RSS feed by
+accessing it directly through your browser's address bar. Usually, the
+website's RSS feed is located at
+<span class=text-breakall>https://www.website.com/rss.xml</span>, or at
+<span class=text-breakall>https://www.website.com/index.xml</span>, or at
+<span class=text-breakall>https://www.website.com/rss</span>, but it can
+vary. As an example, this website's RSS is located
+<a href=../rss.xml>here</a>.</p><p>Some social media have a hidden RSS feed that you can access; some examples:</p><p><strong>Tumblr:</strong>
+<span class=text-breakall>https://<i>username</i>.tumblr.com/rss</span></p><p><strong>Bluesky:</strong>
+<span class=text-breakall>https://bsky.app/profile/<i>username</i>/rss</span></p><p><strong>Reddit:</strong>
+<span class=text-breakall>https://www.reddit.com/r/<em>subredditname</em>.rss</span>
+or
+<span class=text-breakall>https://www.reddit.com/u/<em>username</em>.rss</span></p><p><strong>YouTube:</strong> Requires a bit of code digging, unfortunately. On
+PC:</p><details><summary>(show steps)</summary><ol><li>Open the YouTube channel in your browser.</li><li>Right-click "view page source".</li><li>Press Ctrl + F on your keyboard.</li><li>Search for "browse_id" (without the quotation marks).</li><li>You should find a part of the code that looks like this:
+<code class=text-breakall>{"key":"browse_id","value":"<i>UC_x5XG1OV2P6uZZ5FSM9Ttw</i>"}</code>, copy the string of random letters and numbers that is inside the
+"value" field, that is the channel's ID.</li><li>Create a working URL to YouTube's channel RSS feed by replacing the
+"CHANNELID" part inside this URL template:
+<span class=text-breakall>https://www.youtube.com/feeds/videos.xml?channel_id=<i>CHANNELID</i></span>
+with the ID you just copied.</li></ol></details><p>Alternatively, on Android, just use
+<a href=https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced/ target=_blank rel="noopener noreferrer">PipePipe</a>
+(my current fav), NewPipe or whatever other software fork there is.</p><p>Feel free to look up online if a website has an RSS feed. A lot of them do,
+but they can be hidden.</p><hr><h2 id=for-developers>For developers: How to add an RSS feed to your website</h2><p>Now that I have hopefully convinced you of how great RSS is, here is a
+tutorial on how to actually implement it and add it to your website.</p><p>Some website builders or <abbr title="static site generators">SSGs</abbr>,
+like for example HUGO which I use, have an option to auto generate RSS feeds,
+but I personally prefer not to use it and instead I prefer to manually write
+updates to my RSS feed, at least for this website. That way I feel I have more
+control.</p><p>First, create a <strong>rss.xml</strong> file in the root directly of your
+website (meaning,
+<em>the top-most folder where all of your website's content resides</em>).
+Then, copy and paste the code below. Keep the overall structure and replace
+the content of each field with your own where applicable.</p><details><summary>Base of your RSS feed (show code)</summary><pre><code><span class=text-colored>&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;UTF-8&#x22;?&#x3E;
+&#x3C;rss version=&#x22;2.0&#x22; xmlns:atom=&#x22;http://www.w3.org/2005/Atom&#x22;&#x3E;
+    &#x3C;channel&#x3E;
+        &#x3C;title&#x3E;</span><i>Title of your website</i><span class=text-colored>&#x3C;/title&#x3E;
+        &#x3C;description&#x3E;</span>
+            <i>Description of your website</i>
+        <span class=text-colored>&#x3C;/description&#x3E;
+        &#x3C;link&#x3E;</span>https://<i>www.yourwebsite.com</i>/rss.xml<span class=text-colored>&#x3C;/link&#x3E;
+        &#x3C;atom:link
+            href=&#x22;</span>https://<i>www.yourwebsite.com</i>/rss.xml<span class=text-colored>&#x22;
+            rel=&#x22;self&#x22;
+            type=&#x22;application/rss+xml&#x22;
+        /&#x3E;
+        &#x3C;ttl&#x3E;</span>1440<span class=text-colored>&#x3C;/ttl&#x3E;
+        &#x3C;webMaster&#x3E;</span><i>youremail@example.com</i><span class=text-colored>&#x3C;/webMaster&#x3E;
+        &#x3C;lastBuildDate&#x3E;</span>
+            <i>Time and date when the RSS feed was last updated in RFC2822 format</i>
+        <span class=text-colored>&#x3C;/lastBuildDate&#x3E;
+        &#x3C;language&#x3E;</span>en-us<span class=text-colored>&#x3C;/language&#x3E;</span>
+
+&#x2003;&#x2003;&#x3C;!--
+&#x2003;&#x2003;Place your feed items here.
+&#x2003;&#x2003;This is just a comment,
+&#x2003;&#x2003;you can delete it later.
+&#x2003;&#x2003;--&#x3E;
+
+    <span class=text-colored>&#x3C;/channel&#x3E;
+&#x3C;/rss&#x3E;</span></code></pre></details><p>Next, you will want to add individual items or entries to your RSS feed. Below
+are code snippets that you can copy and paste.</p><details><summary>Basic feed item without any links (show code)</summary><p><i>I use this one when I just want to notify my subscribers of some small
+general update, for example about improving some parts of a site's
+functionality. It doesn't link to any larger page. Think of it as a log
+entry.</i></p><hr><pre><code><span class=text-colored>&#x3C;item&#x3E;
+    &#x3C;title&#x3E;</span><i>Title of your post</i><span class=text-colored>&#x3C;/title&#x3E;
+    &#x3C;description&#x3E;</span>
+        <i>Description of your post</i>
+    <span class=text-colored>&#x3C;/description&#x3E;
+    &#x3C;pubDate&#x3E;</span>
+        <i>Time and date when the item was made in RFC2822 format</i>
+    <span class=text-colored>&#x3C;/pubDate&#x3E;
+&#x3C;/item&#x3E;</span></code></pre></details><details><summary>Feed item that links to a full blog post (show code)</summary><p><i>This is probably the most common way people structure RSS items. This
+method is most suitable for when you have, for example, a recipe or a blog
+post that is mostly text based.</i></p><p><i>Basically what it does is, it displays a title and a description (which
+acts as a preview to your full post) and when you click on "view full" in
+your RSS reader, it should switch to the blog post itself.</i></p><hr><pre><code><span class=text-colored>&#x3C;item&#x3E;
+    &#x3C;guid&#x3E;</span>https://<i>www.yourwebsite.com/link-to-your-post.html</i><span class=text-colored>&#x3C;/guid&#x3E;
+    &#x3C;title&#x3E;</span><i>Title of your post</i><span class=text-colored>&#x3C;/title&#x3E;
+    &#x3C;description&#x3E;</span>
+        <i>Description of your post</i>
+    <span class=text-colored>&#x3C;/description&#x3E;
+    &#x3C;link&#x3E;</span>https://<i>www.yourwebsite.com/link-to-your-post.html</i><span class=text-colored>&#x3C;/link&#x3E;
+    &#x3C;pubDate&#x3E;</span>
+        <i>Time and date when the item was made in RFC2822 format</i>
+    <span class=text-colored>&#x3C;/pubDate&#x3E;
+&#x3C;/item&#x3E;</span></code></pre></details><details><summary>Feed item with an image and a complex description that links to a site page
+(show code)</summary><p><i>A more complex version of the previous example that can be used to
+showcase artwork or photos. It also demonstrates how you can use some
+basic HTML tags inside the <code>&lt;description></code> field to add
+some optional extra functionality.</i></p><p><i>Do note that <code>&lt;a></code> tags (links) tend to bunch up at the
+end of the paragraph all the time, even if they are placed in the middle
+of it, <s>for some reason</s>...</i></p><hr><pre><code><span class=text-colored>&#x3C;item&#x3E;
+    &#x3C;guid&#x3E;</span>https://<i>www.yourwebsite.com/link-to-your-post.html</i><span class=text-colored>&#x3C;/guid&#x3E;
+    &#x3C;title&#x3E;</span><i>Title of your post</i><span class=text-colored>&#x3C;/title&#x3E;
+    &#x3C;description&#x3E;
+        &#x3C;img src=&#x22;</span>https://<i>www.yourwebsite.com/images/link-to-your-image.jpg</i><span class=text-colored>&#x22; /&#x3E;
+        &#x3C;p&#x3E;</span>
+            <i>This is the first paragraph of a description and it contains a</i>
+            <span class=text-colored>&#x3C;a href=&#x22;</span>https://<i>www.anywebsite.com/any-link.html</i><span class=text-colored>&#x22;&#x3E;</span><i>link</i><span class=text-colored>&#x3C;/a&#x3E;
+        &#x3C;/p&#x3E;
+        &#x3C;p&#x3E;</span>
+            <i>This is the second paragraph</i>
+        <span class=text-colored>&#x3C;/p&#x3E;
+    &#x3C;/description&#x3E;
+    &#x3C;enclosure 
+        url=&#x22;</span>https://<i>www.yourwebsite.com/images/link-to-your-image.jpg</i><span class=text-colored>&#x22; 
+        type=&#x22;image/jpeg&#x22;
+        length=&#x22;</span><i>image file size in bytes</i><span class=text-colored>&#x22;
+    /&#x3E;
+    &#x3C;link&#x3E;</span>https://<i>www.yourwebsite.com/link-to-your-post.html</i><span class=text-colored>&#x3C;/link&#x3E;
+    &#x3C;pubDate&#x3E;</span>
+        <i>Time and date when the item was made in RFC2822 format</i>
+    <span class=text-colored>&#x3C;/pubDate&#x3E;
+&#x3C;/item&#x3E;</span></code></pre></details><p>Further explanation of each field:</p><p><code>&lt;ttl></code> — "time to live"; tells your RSS reader how often to
+refresh the page. Time is set in minutes. Putting 1440 as value means that
+your RSS feed refreshes once a day, which is enough if you don't update your
+website all that often.</p><p><code>&lt;webMaster></code> — <em>optional</em>; your email for contact.</p><p><code>&lt;lastBuildDate></code> — timestamp that shows the last time the
+RSS feed was updated, in RFC2822 format. You can generate an RFC 2822
+timestamp on sites like the
+<a href=https://timestampgenerator.com/ target=_blank rel="noopener noreferrer">UNIX timestamp generator</a>. It looks something like this when generated: Sat, 28 Dec 2024 16:26:14
++0000.</p><p><code>&lt;pubDate></code> — timestamp that shows when the individual item
+was published, in RFC2822 format. Similar to
+<code>&lt;lastBuildDate></code>.</p><p><code>&lt;guid></code> — (from
+<a href=https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt target=_blank rel="noopener noreferrer">rssboard.org</a>):</p><blockquote cite=https://www.rssboard.org/rss-specification#ltguidgtSubelementOfLtitemgt><i>"<code>&lt;guid></code> is an optional sub-element of
+<code>&lt;item></code>. <strong>guid</strong> stands for <b>g</b>lobally
+<b>u</b>nique <b>id</b>entifier. It's a string that uniquely identifies the
+item. When present, an aggregator may choose to use this string to determine
+if an item is new."</i></blockquote><p>Usually, its content is the same as the <code>&lt;link></code> tag. Also,
+keep in mind that
+<strong>you have to use absolute (full path) and not relative links!</strong></p><p>Also, another important note, with
+<code>&lt;guid></code> and <code>&lt;link></code>,
+<strong>don't do this</strong>:</p><details><summary>(show code)</summary><pre><code><span class="text-colored text-uppercase">&#x3C;!-- Don't do this!--&#x3E;</span>
+&#x3C;item&#x3E;
+    <span class=text-colored>&#x3C;guid&#x3E;
+        https://<i>www.yourwebsite.com/link-to-your-post.html</i>
+    &#x3C;/guid&#x3E;</span>
+    &#x3C;title&#x3E;<i>Title of your post</i>&#x3C;/title&#x3E;
+    &#x3C;description&#x3E;
+        <i>Description of your post</i>
+    &#x3C;/description&#x3E;
+    <span class=text-colored>&#x3C;link&#x3E;
+        https://<i>www.yourwebsite.com/link-to-your-post.html</i>
+    &#x3C;/link&#x3E;</span>
+    &#x3C;pubDate&#x3E;
+        <i>Time and date when the item was made in RFC2822 format</i>
+    &#x3C;/pubDate&#x3E;
+&#x3C;/item&#x3E;</code></pre><hr><p>Don't transfer the hyperlink itself onto the new line and then indent it. I
+found that formatting it like that creates spaces before the link so the
+link becomes invalid!</p></details><p><code>&lt;enclosure></code> — <i>supposedly optional</i>, according to
+rssboard.org; a sub element of <code>&lt;item></code> that allows for
+embedding media; in my case, images.</p><p>I did some tests and found out that on some RSS readers, using only the
+<code>&lt;enclosure></code> element is not enough and it doesn't embed the
+image, but on others it does. It seems a bit inconsistent. That is why I
+always use the <code>&lt;img></code> tag inside the
+<code>&lt;description></code> element because I found that to be the most
+foolproof way to add images to RSS items, but I usually prefer to add
+<code>&lt;enclosure></code> element as well because it doesn't hurt I
+suppose.</p><details><summary>Some more info about the <code>&lt;enclosure></code> element...</summary><p><code>&lt;enclosure></code> has three attributes: <code>url</code>,
+<code>length</code> and <code>type</code>. <code>url</code> is a link that
+points to your media file's location, <code>length</code> is the size of the
+file in bytes and <code>type</code> specifies the media type (<abbr title="Multipurpose Internet Mail Extensions">MIME</abbr>
+type).</p><p>Note that, while MIME type and file format are not exactly the same thing,
+in practice they often closely align. For example, if you have a .jpg image,
+the MIME type would be "image/<i>jpeg</i>".</p><p>To get the <code>length</code> of a file (in my case, image), go to a folder
+where the image is located, open a bash terminal <em>in that folder</em> and
+enter a command: <code>stat --format=%s <i>your-image-name.jpg</i></code>. Copy the string of numbers you've got.</p><p>Since I'm on Windows I use Git Bash and I will assume that you know at least
+remotely how to use it. There are other ways to do this, but I found this
+one to be the simplest one.</p></details><p>Now, hard part is over, now you just need to combine the two and fill your RSS
+feed with posts... Below is an example of how that might look like.</p><details><summary>Combining it all together (show code)</summary><pre><code><span class=text-colored>&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;UTF-8&#x22;?&#x3E;
+    &#x3C;rss version=&#x22;2.0&#x22; xmlns:atom=&#x22;http://www.w3.org/2005/Atom&#x22;&#x3E;
+        &#x3C;channel&#x3E;
+            &#x3C;title&#x3E;</span>Example Website<span class=text-colored>&#x3C;/title&#x3E;
+            &#x3C;description&#x3E;</span>
+                This is an example website to showcase RSS feeds
+            <span class=text-colored>&#x3C;/description&#x3E;
+            &#x3C;link&#x3E;</span>https://www.examplewebsite.com/rss.xml<span class=text-colored>&#x3C;/link&#x3E;
+            &#x3C;atom:link
+                href=&#x22;</span>https://www.examplewebsite.com/rss.xml<span class=text-colored>&#x22;
+                rel=&#x22;self&#x22;
+                type=&#x22;application/rss+xml&#x22;
+            /&#x3E;
+            &#x3C;ttl&#x3E;</span>1440<span class=text-colored>&#x3C;/ttl&#x3E;
+            &#x3C;webMaster&#x3E;</span><i>email@example.com</i><span class=text-colored>&#x3C;/webMaster&#x3E;
+            &#x3C;lastBuildDate&#x3E;</span>
+                Sat, 28 Dec 2024 20:55:43 +0000
+            <span class=text-colored>&#x3C;/lastBuildDate&#x3E;
+            &#x3C;language&#x3E;</span>en-us<span class=text-colored>&#x3C;/language&#x3E;</span>
+    
+            <span class=text-colored>&#x3C;item&#x3E;
+                &#x3C;guid&#x3E;</span>https://www.examplewebsite.com/post3.html<span class=text-colored>&#x3C;/guid&#x3E;
+                &#x3C;title&#x3E;</span>Post 3<span class=text-colored>&#x3C;/title&#x3E;
+                &#x3C;description&#x3E;</span>
+                    This is the 3rd post
+                <span class=text-colored>&#x3C;/description&#x3E;
+                &#x3C;link&#x3E;</span>https://www.examplewebsite.com/post3.html<span class=text-colored>&#x3C;/link&#x3E;
+                &#x3C;pubDate&#x3E;</span>
+                    Sat, 28 Dec 2024 20:55:43 +0000
+                <span class=text-colored>&#x3C;/pubDate&#x3E;
+            &#x3C;/item&#x3E;</span>
+
+            <span class=text-colored>&#x3C;item&#x3E;
+                &#x3C;guid&#x3E;</span>https://www.examplewebsite.com/post2.html<span class=text-colored>&#x3C;/guid&#x3E;
+                &#x3C;title&#x3E;</span>Post 2<span class=text-colored>&#x3C;/title&#x3E;
+                &#x3C;description&#x3E;</span>
+                    This is the 2nd post
+                <span class=text-colored>&#x3C;/description&#x3E;
+                &#x3C;link&#x3E;</span>https://www.examplewebsite.com/post2.html<span class=text-colored>&#x3C;/link&#x3E;
+                &#x3C;pubDate&#x3E;</span>
+                    Sat, 28 Dec 2024 19:50:43 +0000
+                <span class=text-colored>&#x3C;/pubDate&#x3E;
+            &#x3C;/item&#x3E;</span>
+
+            <span class=text-colored>&#x3C;item&#x3E;
+                &#x3C;guid&#x3E;</span>https://www.examplewebsite.com/post1.html<span class=text-colored>&#x3C;/guid&#x3E;
+                &#x3C;title&#x3E;</span>Post 1<span class=text-colored>&#x3C;/title&#x3E;
+                &#x3C;description&#x3E;</span>
+                    This is the 1st post
+                <span class=text-colored>&#x3C;/description&#x3E;
+                &#x3C;link&#x3E;</span>https://www.examplewebsite.com/post1.html<span class=text-colored>&#x3C;/link&#x3E;
+                &#x3C;pubDate&#x3E;</span>
+                    Sat, 28 Dec 2024 18:49:43 +0000
+                <span class=text-colored>&#x3C;/pubDate&#x3E;
+            &#x3C;/item&#x3E;</span>
+    
+        <span class=text-colored>&#x3C;/channel&#x3E;
+    &#x3C;/rss&#x3E;</span></code></pre></details><p><strong>Tip:</strong> if you want to include some
+<strong>special characters</strong> in your RSS feed, like "&" for example,
+  make sure to write them as a HTML entity, so as "&#x26;#x26;" (without the
+quotation marks) in this case. Here is a basic
+<a href=https://mothereff.in/html-entities target=_blank rel="noopener noreferrer">HTML entity encoder/decoder</a>.</p><p><i>After you have created the RSS feed itself, there is still some extra
+things you can do...</i></p><p><strong>Regarding favicons:</strong> Some RSS readers seem to completely
+ignore favicons, while some don't, it's a bit inconsistent. Although, after
+some testing, I found that the most sure way to have an RSS reader actually
+recognize and fetch your website's favicon is <em>to make sure</em> it's
+located in the root directory of your website and that it's named something
+like "favicon.ico".</p><p><strong>Linking your RSS feed in the <code>&lt;head></code></strong>: After you have created your RSS feed, you can add a button to your site
+linking to it. But, in addition to that, you can also add a
+<code>&lt;link></code> tag inside your website's
+<code>&lt;head></code> tag and link your RSS feed there as well. You
+can even have multiple feeds, just give them descriptive names that make
+sense! See the code below...</p><details><summary>Linking the RSS feed</summary><pre><code>&#x3C;link 
+    rel=&#x22;alternate&#x22; 
+    type=&#x22;application/rss+xml&#x22; 
+    title=&#x22;<i>RSS feed for my site</i>&#x22; 
+    href=&#x22;https://<i>my-website</i>/rss.xml&#x22; 
+/&#x3E;</code></pre></details><p>What it does is it makes it your RSS feed autodiscoverable... Sorta. Well,
+back in the ye olden days, most browsers had a built-in RSS reader and they
+could automatically detect if a website had RSS feed. Nowadays, that
+functionality is mostly gone (shame!), but, fret not, at least for Firefox,
+there are extensions such as
+<a href=https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/ target=_blank rel="noopener noreferrer">Awesome RSS
+</a>that returns that functionality! After you install it, if a website has a
+fetchable RSS feed, at the corner of your browser's address bar you will see
+an RSS icon.</p><p>Also, one more thing. When <strong>troubleshooting</strong> your RSS feed in
+RSS readers, remember to occasionally unsubscribe and resubscribe and
+<em>clear cache</em>! Because often you just need to refresh it for your
+changes to show up.</p><p>You can read more about the official RSS documentation on
+<a href=https://www.rssboard.org/rss-specification target=_blank rel="noopener noreferrer">RSS Advisory Board</a>.</p><hr><p><i>P.S. If you have any suggestions on how to improve this guide, or you spot
+any mistakes, you can contact me through my mail that is linked in the
+<a href=../contact.html>contact</a> page.</i></p><p class=text-center><a href=#><span aria-hidden=true>[ </span>Back to top<span aria-hidden=true>
+]</span></a></p></main><div class=divider></div><footer><p>&copy; 2025 Sqvrltastic Art Archive</p><p>Powered by Hugo & GitHub Pages</p></footer><script>const toggle=document.getElementById("theme-toggle"),icon=document.getElementById("theme-icon"),html=document.documentElement,sunIcon="/images/icons/sun.png",moonIcon="/images/icons/moon.png";toggle.addEventListener("click",()=>{const t=html.getAttribute("data-theme"),e=t==="dark"?"light":"dark";html.setAttribute("data-theme",e),localStorage.setItem("theme",e),icon.src=e==="dark"?moonIcon:sunIcon,icon.alt=e==="dark"?"Dark theme ON":"Light theme ON"});const initialTheme=html.getAttribute("data-theme");icon.src=initialTheme==="dark"?moonIcon:sunIcon,icon.alt=initialTheme==="dark"?"Dark theme ON":"Light theme ON"</script></body></html>
