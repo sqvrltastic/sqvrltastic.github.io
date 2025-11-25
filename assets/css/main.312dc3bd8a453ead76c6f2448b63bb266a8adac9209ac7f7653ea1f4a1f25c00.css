@@ -1,0 +1,583 @@
+/* CSS Document */
+
+@charset "UTF-8";
+
+/* Custom typeface — Open Sans (sans-serif) */
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Custom typeface — Google Sans Code (monospace) */
+
+/* Regular */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("../fonts/GoogleSansCode-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("../fonts/GoogleSansCode-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("../fonts/GoogleSansCode-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("../fonts/GoogleSansCode-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Custom typeface — Slackside One (display font) */
+
+/* Regular */
+@font-face {
+  font-family: "SlacksideOne";
+  src: url("../fonts/SlacksideOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Skip to main link */
+
+.skip {
+  position: absolute;
+  inset-inline-start: -10000px;
+  inset-block-start: auto;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  inline-size: auto;
+  block-size: auto;
+}
+
+/* General styling */
+
+:root {
+  --bg-color: #f2f2f2;
+  --main-color: black;
+  --click-color: gainsboro;
+  --bg-extra-color: #d9d9d9;
+  --main-extra-color: gray;
+  --colored-text: #0000f5;
+}
+
+html[data-theme="dark"] {
+  --bg-color: #2b2b2b;
+  --main-color: #dedede;
+  --click-color: #3b3b3b;
+  --bg-extra-color: #454545;
+  --main-extra-color: gray;
+  --colored-text: greenyellow;
+}
+
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  font-family: OpenSans, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+}
+
+header,
+main,
+footer {
+  max-inline-size: 33rem;
+  margin: 0 auto;
+}
+
+main {
+  border-block-start: 0.1rem dotted var(--main-extra-color);
+  border-block-end: 0.1rem dotted var(--main-extra-color);
+}
+
+header > p {
+  font-size: 2.3rem;
+  font-family: SlacksideOne, monospace;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+nav {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button > img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  block-size: 1rem;
+  transition: filter 0.3s;
+}
+
+button > img:hover {
+  filter: opacity(0.5);
+}
+
+button > img:active {
+  filter: opacity(0.1);
+  transition: none;
+}
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 0.35rem;
+  margin: 1.2rem auto;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+h3,
+h4 {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+a {
+  color: var(--main-color);
+}
+
+a:hover {
+  color: var(--main-extra-color);
+}
+
+a:active {
+  color: var(--click-color);
+  transition: none;
+}
+
+li {
+  line-height: 1.3rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code,
+kbd {
+  font-family: GoogleSansCode, Consolas, monospace;
+  font-size: 0.75rem;
+  background-color: var(--bg-extra-color);
+  display: inline-block;
+  max-inline-size: fit-content;
+  padding: 0.04rem 0.1rem;
+  border-radius: 0.2rem;
+}
+
+hr {
+  border: none;
+  margin: 1.3rem auto 1rem;
+}
+
+hr::before {
+  content: "***";
+  display: block;
+  text-align: center;
+}
+
+details {
+  margin: 1rem auto;
+  border: 0.1rem solid var(--main-color);
+  border-radius: 0.2rem;
+}
+
+details > *:not(summary) {
+  margin: 1rem;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+/* Rotating triangle for <details> */
+
+summary::after {
+  content: "";
+  transition: 0.3s;
+  border-top: 0.4rem solid var(--main-color);
+  border-inline: 0.25rem solid transparent;
+}
+
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* end */
+
+/* <details> CSS-only animation, with presets for different sizes */
+
+details::details-content {
+  max-block-size: 0;
+  opacity: 0;
+  transition: opacity 0.4s, max-block-size 0.15s linear,
+    content-visibility 0.15s linear;
+  transition-behavior: allow-discrete;
+  overflow: hidden;
+}
+
+details[open]::details-content {
+  opacity: 1;
+  max-block-size: 15rem; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+}
+
+.animation-medium::details-content {
+  transition: opacity 0.4s, max-block-size 0.2s linear,
+    content-visibility 0.2s linear;
+  transition-behavior: allow-discrete;
+}
+
+.animation-medium[open]::details-content {
+  max-block-size: 30rem;
+}
+
+.animation-long::details-content {
+  transition: opacity 0.4s, max-block-size 0.25s linear,
+    content-visibility 0.25s linear;
+  transition-behavior: allow-discrete;
+}
+
+.animation-long[open]::details-content {
+  max-block-size: 60rem;
+}
+
+.animation-extra-long::details-content {
+  transition: opacity 0.4s, max-block-size 0.3s linear,
+    content-visibility 0.3s linear;
+  transition-behavior: allow-discrete;
+}
+
+.animation-extra-long[open]::details-content {
+  max-block-size: 100rem;
+}
+
+/* end */
+
+summary > h3 {
+  margin: 0;
+}
+
+summary:hover {
+  cursor: pointer;
+  background-color: var(--bg-extra-color);
+}
+
+figure {
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border: 0.1rem solid var(--main-color);
+  border-radius: 0.2rem;
+}
+
+figure > img {
+  border: 0.07rem solid var(--main-color);
+}
+
+article {
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border: 0.1rem solid var(--main-color);
+  border-radius: 0.2rem;
+}
+
+article > div {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 0.7rem;
+}
+
+article > div > h2 {
+  margin: 0;
+}
+
+article p {
+  margin: 0;
+}
+
+article > img {
+  display: block;
+  max-inline-size: 10rem;
+  aspect-ratio: 1 / 1;
+  border: 0.07rem solid var(--main-color);
+  margin-block-end: 0.7rem;
+}
+
+article > .desc {
+  margin-block-start: 0.7rem;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.preview {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 0.07rem solid var(--main-color);
+  transition: filter 0.3s;
+}
+
+.preview > img {
+  inline-size: 100%;
+}
+
+.preview:hover {
+  filter: brightness(1.15);
+}
+
+.preview:active {
+  border: 0.07rem solid var(--click-color);
+}
+
+.artwork {
+  border: 0.07rem solid var(--main-color);
+}
+
+.artwork > img {
+  display: block;
+  max-inline-size: 100%;
+  max-block-size: 30rem;
+  margin: 0 auto;
+}
+
+/* Responsive images */
+
+.responsive-img {
+  max-inline-size: 100%;
+}
+
+/* Title and date for some posts */
+
+.title-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS for 404 page */
+
+.fourofour {
+  text-align: center;
+  inline-size: fit-content;
+  block-size: fit-content;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.fourofour > h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.fourofour > p {
+  margin: 0 auto 1rem;
+}
+
+/* Ocasionally used text styles */
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-colored {
+  color: var(--colored-text);
+}
+
+.text-breakall {
+  word-break: break-all;
+}
+
+.spoiler {
+  background-color: var(--main-color);
+  color: var(--main-color);
+}
+
+.spoiler:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* OS dark theme preference if not manually set */
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --bg-color: #2b2b2b;
+    --main-color: #dedede;
+    --click-color: #3b3b3b;
+    --bg-extra-color: #454545;
+    --main-extra-color: gray;
+    --colored-text: greenyellow;
+  }
+}
+
+/* CSS for smaller screens */
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+    justify-content: center;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured > a:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header > p {
+    font-size: 2rem;
+    margin-block-start: 0;
+  }
+
+  nav {
+    gap: 1rem 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  nav > button > img {
+    block-size: 0.85rem;
+  }
+
+  details > *:not(summary) {
+    margin: 0.8rem;
+  }
+
+  .gallery,
+  .featured {
+    gap: 0.3rem;
+  }
+}
