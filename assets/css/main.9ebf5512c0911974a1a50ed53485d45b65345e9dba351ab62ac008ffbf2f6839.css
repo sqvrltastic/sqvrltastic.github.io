@@ -396,6 +396,11 @@ article > .desc {
   margin-block-start: 0.7rem;
 }
 
+iframe {
+  inline-size: 100%;
+  block-size: 30rem;
+}
+
 /* Gallery */
 
 .gallery {
