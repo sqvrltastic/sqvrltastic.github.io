@@ -139,7 +139,7 @@ body {
 header,
 main,
 footer {
-  max-inline-size: 33rem;
+  max-inline-size: 35rem;
   margin: 0 auto;
 }
 
@@ -546,43 +546,38 @@ iframe {
 
 /* CSS for smaller screens */
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
   nav {
+    font-size: 0.85rem;
     flex-wrap: wrap;
     gap: 1rem 3rem;
     justify-content: center;
   }
 
+  nav > button > img {
+    block-size: 0.85rem;
+  }
+}
+
+@media (max-width: 660px) {
+  header > p {
+    font-size: 1.8rem;
+    margin-block-start: 0;
+  }
+}
+
+@media (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .featured > a:last-child {
-    display: none;
   }
 }
 
 @media (max-width: 500px) {
-  header > p {
-    font-size: 2rem;
-    margin-block-start: 0;
-  }
-
-  nav {
-    gap: 1rem 2.5rem;
-    font-size: 0.85rem;
-  }
-
-  nav > button > img {
-    block-size: 0.85rem;
-  }
-
   details > *:not(summary) {
-    margin: 0.8rem;
+    margin: 0.5rem;
   }
 
-  .gallery,
-  .featured {
+  .gallery {
     gap: 0.3rem;
   }
 }
