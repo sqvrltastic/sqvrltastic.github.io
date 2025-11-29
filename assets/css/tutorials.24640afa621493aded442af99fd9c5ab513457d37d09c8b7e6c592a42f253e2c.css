@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* Styles that are only used it tutorials for demonstation */
+
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 1.7rem;
+  margin-block-start: revert;
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ul-hyphen > li::marker {
+  content: "\2010 \0020"/ "";
+}
+
+.ul-asterisk > li::marker {
+  content: "\002A \0020"/ "";
+}
+
+.ul-plus > li::marker {
+  content: "\002B \0020"/ "";
+}
+
+.hr {
+  border: revert;
+  margin: 1rem auto;
+}
+
+.hr::before {
+  content: revert;
+}
+
+.details,
+.details > *:not(summary),
+.details > summary,
+.details > summary::after,
+.details > summary::-webkit-details-marker,
+.details::details-content,
+.details[open]::details-content {
+  all: revert-layer;
+}
+
+.details-one > summary {
+  display: revert-layer;
+  list-style: revert-layer;
+}
+
+.details-one > summary::after,
+.details-one > summary::-webkit-details-marker,
+.details-one::details-content,
+.details-one[open]::details-content {
+  all: revert-layer;
+}
+
+.details-two::details-content,
+.details-two[open]::details-content {
+  all: revert-layer;
+}
+
+.details-three::details-content {
+  max-block-size: revert-layer;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.details-three[open]::details-content {
+  opacity: 1;
+  max-block-size: revert-layer;
+}

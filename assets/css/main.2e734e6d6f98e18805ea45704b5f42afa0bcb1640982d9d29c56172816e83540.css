@@ -1,5 +1,3 @@
-/* CSS Document */
-
 @charset "UTF-8";
 
 /* Custom typeface — Open Sans (sans-serif) */
@@ -143,13 +141,8 @@ footer {
   margin: 0 auto;
 }
 
-main {
-  border-block-start: 0.1rem dotted var(--main-extra-color);
-  border-block-end: 0.1rem dotted var(--main-extra-color);
-}
-
 header > p {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-family: SlacksideOne, monospace;
   text-align: center;
   margin: 1rem auto;
@@ -192,6 +185,11 @@ button > img:active {
   transition: none;
 }
 
+main {
+  border-block-start: 0.1rem dotted var(--main-extra-color);
+  border-block-end: 0.1rem dotted var(--main-extra-color);
+}
+
 footer {
   font-size: 0.7rem;
   text-align: center;
@@ -205,7 +203,7 @@ h1 {
 
 h2 {
   font-size: 0.9rem;
-  margin-top: 2rem;
+  margin-block-start: 2rem;
 }
 
 h3,
@@ -281,7 +279,7 @@ summary {
 summary::after {
   content: "";
   transition: 0.3s;
-  border-top: 0.4rem solid var(--main-color);
+  border-block-start: 0.4rem solid var(--main-color);
   border-inline: 0.25rem solid transparent;
 }
 
@@ -511,26 +509,6 @@ iframe {
   color: var(--main-color);
 }
 
-.h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.h2 {
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-.h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.h4 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 /* OS dark theme preference if not manually set */
 
 @media (prefers-color-scheme: dark) {
@@ -561,7 +539,7 @@ iframe {
 
 @media (max-width: 660px) {
   header > p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-block-start: 0;
   }
 }
