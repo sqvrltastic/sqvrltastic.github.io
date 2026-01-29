@@ -1,0 +1,369 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary workaround until the calc-size() CSS function becomes widely available."><meta property="og:title" content="Animating details HTML element with pure CSS (without calc-size(auto)) | Sqvrltastic's Homepage"><meta property="og:description" content="I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary workaround until the calc-size() CSS function becomes widely available."><meta property="og:type" content="website"><meta property="og:url" content="https://sqvrltastic.art/guides/animating-details-element-with-css/"><meta property="twitter:domain" content="sqvrltastic.art"><meta property="twitter:url" content="https://sqvrltastic.art"><meta name=twitter:title content="Animating details HTML element with pure CSS (without calc-size(auto)) | Sqvrltastic's Homepage"><meta name=twitter:description content="I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary workaround until the calc-size() CSS function becomes widely available."><title>Animating details HTML element with pure CSS (without calc-size(auto)) | Sqvrltastic's Homepage</title>
+<link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/assets/css/main.min.86cce33d1f94a6294a84f0ee550f98ed47e18ac05adc2fb9f6df9c3bc7a75eda.css><link rel=stylesheet href=/assets/css/tutorials.min.d0fdcbc0d6a63f7505f27e4537e314b26afc980ac2ed886c157f2f97a2d0b0c9.css><link rel=alternate type=application/rss+xml title="RSS feed for
+  Sqvrltastic's Homepage" href=https://sqvrltastic.art/rss.xml><link rel=canonical href=https://sqvrltastic.art/guides/animating-details-element-with-css/><script src=/assets/js/theme-head.min.b68f4c912b682e9187a7b9ac05ce8ae40866b73aad9f87d547f6885919b4062f.js></script></head><body><a href=#main id=skip-link>Skip to main content</a><noscript class=noscript><p><strong>Warning:</strong> JavaScript is disabled in your browser. The core functionality of this site works
+without JavaScript, but it is required for some QoL features to work, as well as for displaying custom,
+self-hosted fonts.</p><style>#theme-toggle{display:none}#theme-no-js{display:inline}#scroll-to-top{opacity:1;content-visibility:visible;pointer-events:auto}</style></noscript><details id=mobile-menu><summary>Menu</summary><nav><div><a href=/><strong>Home</strong></a></div><div><strong>Artworks</strong>
+<a href=/fanart>Fanart</a>
+<a href=/originals>Originals</a></div><div><strong>Writings</strong>
+<a href=/guides>Guides</a>
+<a href=/journal>Journal</a></div><div><strong>Personal</strong>
+<a href=/about-me>About me</a>
+<a href=/my-tools>My tools</a>
+<a href=/favorite-media>Favorite media</a></div><div><strong>Website</strong>
+<a href=/guestbook>Guestbook</a>
+<a href=/buttons-and-banners>Buttons and banners</a>
+<a href=/about-this-website>About this website</a>
+<a href=/old-designs-archive>Old designs archive</a></div><div><strong>Outbound links</strong>
+<a href=/resources>Resources</a>
+<a href=/other-indie-websites>Other indie websites</a></div><div><strong>Other</strong>
+<a href=/art-usage-rights>Art usage rights</a></div></nav></details><div id=flex-container><div id=left-column><a id=logo href=/>Sqvrltastic's<br>Homepage</a><nav><div><a href=/><strong>Home</strong></a></div><div><strong>Artworks</strong>
+<a href=/fanart>Fanart</a>
+<a href=/originals>Originals</a></div><div><strong>Writings</strong>
+<a href=/guides>Guides</a>
+<a href=/journal>Journal</a></div><div><strong>Personal</strong>
+<a href=/about-me>About me</a>
+<a href=/my-tools>My tools</a>
+<a href=/favorite-media>Favorite media</a></div><div><strong>Website</strong>
+<a href=/guestbook>Guestbook</a>
+<a href=/buttons-and-banners>Buttons and banners</a>
+<a href=/about-this-website>About this website</a>
+<a href=/old-designs-archive>Old designs archive</a></div><div><strong>Outbound links</strong>
+<a href=/resources>Resources</a>
+<a href=/other-indie-websites>Other indie websites</a></div><div><strong>Other</strong>
+<a href=/art-usage-rights>Art usage rights</a></div></nav></div><div id=center-column><main id=main><header><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://sqvrltastic.art/","name":"Home","position":1},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/","name":"Guides","position":2},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/animating-details-element-with-css/","name":"Animating details HTML element with pure CSS (without calc-size(auto))","position":3}]}</script><ul id=breadcrumbs><li><a href=/>Home</a> /&nbsp;</li><li><a href=/guides/>Guides</a> /&nbsp;</li><li>Animating details HTML element with pure CSS (without calc-size(auto))</li></ul><h1>Animating details HTML element with pure CSS (without calc-size(auto))</h1><p>Published: <time datetime=2025-29-11>11/29/2025</time>
+|
+Updated: <time datetime=2026-24-01>01/24/2026</time></p></header><script type=application/ld+json>"{\"@context\":\"https://schema.org\",\"@type\":\"TechArticle\",\"author\":\"sqvrltastic\",\"contentUrl\":\"https://sqvrltastic.art/guides/animating-details-element-with-css/\",\"datePublished\":\"2025-11-29T00:00:00Z\",\"description\":\"I needed some ingenious solution to pretty-up my details element styling. This guide is a temporary workaround until the calc-size() CSS function becomes widely available.\",\"name\":\"Animating details HTML element with pure CSS (without calc-size(auto))\"}"</script><div class=note-box><p><strong>Table of contents:</strong></p><ol><li><a href=#introduction>Introduction</a></li><li><a href=#lets-begin>Let's begin...</a></li><li><a href=#changing-the-default-styles>Changing the default styles</a></li><li><a href=#changing-the-default-marker>Changing the default marker</a></li><li><a href=#animating-opening-and-closing>Animating opening and closing of the <code>&lt;details></code></a></li><li><a href=#adding-media-query>Bonus: Adding media query to respect user's reduced motion preferences</a></li></ol></div><h2 id=introduction>Introduction</h2><p><i>This guide is a temporary workaround until the <code>calc-size()</code> <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc-size target=_blank rel="noopener noreferrer">(MDN Web Docs)</a> CSS function becomes widely available.</i></p><hr><p>I recently decided to pretty-up my website a bit, and one of the things I
+wanted to improve the most was the <code>&lt;details></code>
+element.</p><p>Before we start, I need to make some things clear — <strong>this is not an ideal
+solution</strong>, but it's the best one that I managed to figure out, based on
+features that are currently available and widely supported across all major
+browsers (spoiler: we will be using <code>max-block-size</code> CSS property). Also, I will assume that you at least
+know some basics of HTML and
+CSS by now.</p><p>Historically, accordion menus have often
+been an accessibility nightmare and people didn't really have a set way of
+making them. HTML5, however, introduced a native <code>&lt;details></code>
+element. While it also used to have some accessibility problems, most of
+them seem to be resolved by now. At the very least, it's standardized.</p><h2 id=lets-begin>Let's begin...</h2><p>Here is what a default
+<code>&lt;details></code>
+element looks like, without any CSS applied:</p><details class=details><summary>This is the summary; click me!</summary><p>This is the contents section. Looks pretty plain, doesn't it?</p><p><i aria-hidden=true>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget
+elit nibh. Aliquam quis justo molestie, pellentesque ante eu, accumsan
+lectus. Morbi condimentum ligula luctus enim suscipit, id bibendum velit
+molestie. Duis vel enim metus. Donec efficitur rutrum enim bibendum commodo.</i></p></details><h2 id=changing-the-default-styles>Changing the default styles</h2><p>Let's start with adding some basic styling and changing a few things. We will
+add a border and gradual color change on hover over the
+<code>&lt;summary></code> element. By the way... Did you notice how, despite the
+<code>&lt;summary></code> element behaving more like a button, on mouse hover,
+instead of the pointer cursor, it has a text select cursor? Well, I personally think it makes no
+sense, so I will change that by adding cursor: pointer in my CSS sheet. This is how it looks now:</p><details class=details-one><summary>Changing the default styles a bit (show code)</summary><pre><code>details {
+  border: 0.1rem solid black; /* I prefer to use rems and ems */
+  border-radius: 0.5em;
+  overflow: hidden; /* or else the round edges clip */
+  /* Utilizing native CSS nesting */
+  > *:not(summary) {
+  margin: 1em;
+  }
+}
+
+ summary {
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+}
+</code></pre></details><p><strong>Tip:</strong> If you want to include headings in your
+<code>&lt;summary></code> element (you are allowed to, which isn't the
+case with the buttons), you can change their display property to
+"inline" (since they are block elements by default) with CSS, or else they will look weird. <em>I won't
+</em>be doing that in this case, because I will be changing it to flexbox further down the line.</p><h2 id=changing-the-default-marker>Changing the default marker</h2><p>Let's pretty-up the default marker next. First, I will move it to the end of
+the <code>&lt;summary></code> container by converting it to flexbox. Then, I will add the CSS marker rotation
+animation.</p><details class=details-two><summary>Сhanging the look of the default marker (show code)</summary><pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
+  margin: 1em;
+  }
+  &[open] > summary::after {
+  /* this makes the marker actually rotate */
+  transform: rotate(-180deg);
+  }
+}
+
+ summary {
+  display: flex; /* you need flexbox to put marker in place at the end */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+  &::after {
+  /* New triangle marker for &#x3C;details&#x3E; */
+  content: "";
+  transition: 0.3s;
+  border-block-start: 0.4em solid black;
+  border-inline: 0.25em solid transparent;
+  }
+  &::-webkit-details-marker {
+  /* For Safari browser */
+  display: none;
+  }
+}</code></pre></details><p>Credits to <a href=https://codepen.io/SitePoint/pen/gOqYGWy target=_blank rel="noopener noreferrer">SitePoint</a>
+(codepen.io) for the main idea.</p><h2>Adding a fade-in and fade-out effect on opening and closing the element</h2><p>You can target the content inside the <code>&lt;details></code> element with the CSS pseudo-element
+<code>::details-content</code>. I'm going to add a simple opacity fade effect. Just something to spice-up the
+content
+further!</p><details class=details-three><summary>Fade-in effect (show code)</summary><pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
+  margin: 1em;
+  }
+  &[open] > summary::after {
+  transform: rotate(-180deg);
+  }
+  &::details-content {
+  /* pseudo-element to target the... 
+  actual content of details element, duh.
+  Adding fade-in effect */
+  opacity: 0;
+  transition: opacity 0.4s;
+  }
+  &[open]::details-content {
+  opacity: 1;
+  }
+}
+
+ summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+  &::after {
+  content: "";
+  transition: 0.3s;
+  border-block-start: 0.4em solid black;
+  border-inline: 0.25em solid transparent;
+  }
+  &::-webkit-details-marker {
+  display: none;
+  }
+}
+</code></pre></details><h2 id=animating-opening-and-closing>... And <em>now</em> the thing you all came here for — animating the opening
+and closing of the
+&lt;details>
+element</h2><p>Okay so, here is the thing. Ideally, we would use the CSS declaration <code>block-size: calc-size(auto);</code> (or
+<code>height</code> instead of <code>block-size</code>, look up <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Logical_properties_and_values target=_blank rel="noopener noreferrer">logical properties and values</a>) and be done with it. But as of writing this guide
+(11/27/2025), the <code>calc-size();</code> CSS function remains an experimental feature, one that is not supported
+in
+all major browsers.</p><p>So... Now what? Well, I decided to look up JavaScript solutions, even though I firmly believe that JS should
+<em>only</em> be used for interactivity and <em>not</em> for styling. And yet, everything I could find seemed overly
+complicated. I myself am not yet that good with JavaScript to code a solution from scratch, so... I abandoned the
+idea.</p><p>Thankfully, I found a different approach, that only uses CSS and is widely supported. We are going to use the CSS
+property <code>max-block-size</code> (or, <code>max-height</code>), but the catch is... We will have to hardcode it.
+I
+am also going to create multiple CSS animation "presets" with different timings for <code>&lt;details></code>
+elements with different heights. Also, I will be assigning each HTML <code>&lt;details></code> element a
+corresponding <code>class</code> attribute. You will see why soon.</p><p>On my site, I have <em>4</em> different CSS animation presets, each tailored for different height of the
+<code>&lt;details></code> element. The thing is, if your hardcoded <code>max-block-size</code> height is too
+small, then a part of your content placed inside the <code>&lt;details></code> will get cut off. And if your
+hardcoded height is too big, the
+closing/collapsing animation will have a very noticeable delay, since the browser is calculating the size as if it
+was
+your maximum specified size. This is also why I utilized the <code>linear</code>
+<code>transition-timing-function</code> value,
+because it's the same speed all the way through.</p><p><strong>Important:</strong> You will have to finetune the timings and sizes to suit your own usecase. <em>Make
+sure</em> that you test how your <code>&lt;details></code> element looks with a high zoom level, such as
+150% or 170% and/or with a different viewport width (that just means that you should narrow your desktop browser
+window size, FYI).</p><p>Aaaanyway... Here is the code for you:</p><details class=animation-extra-long><summary>Fade-in and gradual opening and closing animation (show code)</summary><pre><code>details {
+  border: 0.1rem solid black; 
+  border-radius: 0.5em;
+  overflow: hidden;
+  > *:not(summary) {
+  margin: 1em;
+  }
+  &[open] > summary::after {
+  transform: rotate(-180deg);
+  }
+  &::details-content {
+  max-block-size: 0;
+  opacity: 0;
+  /* animation */
+  transition:
+    opacity 0.3s,
+    max-block-size 0.2s linear,
+    content-visibility 0.2s linear; /* fine tune the timings */
+  transition-behavior: allow-discrete;
+  overflow: hidden;
+  }
+  &[open]::details-content {
+  opacity: 1;
+  max-block-size: 10em; /* just an example */
+  /* max-block-size has to be hard-coded 
+  for the animation to work (unfortunately) */
+  }
+}
+
+ summary {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  transition: background-color 0.3s;
+  &:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+  &::after {
+  content: "";
+  transition: 0.3s;
+  border-block-start: 0.4em solid black;
+  border-inline: 0.25em solid transparent;
+  }
+  &::-webkit-details-marker {
+  display: none;
+  }
+}</code></pre></details><p>And here are my animation presets and my timings that I picked for myself, both for opacity and movement:</p><details class=animation-extra-long><summary>My own CSS animation presets</summary><pre><code>details {
+  &::details-content {
+    max-block-size: 0;
+    opacity: 0;
+    transition:
+      opacity 0.4s,
+      max-block-size 0.3s linear,
+      content-visibility 0.3s linear;
+    transition-behavior: allow-discrete;
+    overflow: hidden;
+  }
+  &[open]::details-content {
+    opacity: 1;
+    max-block-size: 55em; /* max-block-size has to be hard-coded for the animation to work (unfortunately) */
+  }
+}
+
+.animation-medium {
+  &::details-content {
+    transition:
+      opacity 0.5s,
+      max-block-size 0.4s linear,
+      content-visibility 0.4s linear;
+    transition-behavior: allow-discrete; /* for some reason I have to repeat this rule every time, or else Edge (specifically) misbehaves */
+  }
+  &[open]::details-content {
+    max-block-size: 110em;
+  }
+}
+
+.animation-long {
+  &::details-content {
+    transition:
+      opacity 0.6s,
+      max-block-size 0.5s linear,
+      content-visibility 0.5s linear;
+    transition-behavior: allow-discrete;
+  }
+  &[open]::details-content {
+    max-block-size: 165em;
+  }
+}
+
+.animation-extra-long {
+  &::details-content {
+    transition:
+      opacity 0.7s,
+      max-block-size 0.6s linear,
+      content-visibility 0.6s linear;
+    transition-behavior: allow-discrete;
+  }
+  &[open]::details-content {
+    max-block-size: 220em;
+  }
+}</code></pre></details><p>And here is how my final presets look:</p><details><summary>Default size (small)</summary><p>Lorem ipsum <span aria-hidden=true>dolor sit amet, consectetur adipiscing elit. Praesent vitae nisl ut metus
+aliquam tempor. Sed lacinia finibus urna vestibulum mattis. Nullam facilisis eros leo, feugiat posuere erat
+venenatis sed. Proin vitae finibus nisl. Donec eget suscipit turpis. Donec sed lectus lacinia, ultricies ipsum ac,
+finibus turpis. Ut rhoncus felis enim, at finibus magna pulvinar at. Donec rhoncus nulla ac enim varius, vitae
+semper mi fermentum. Aliquam id pellentesque enim. Aliquam sollicitudin felis ut dapibus gravida. Ut sollicitudin
+libero velit, ut sollicitudin erat luctus a. Sed nunc mauris, viverra eget pellentesque a, faucibus sit amet
+dolor. In imperdiet blandit dolor.</span></p></details><details class=animation-medium><summary>Medium size</summary><p>Lorem ipsum <span aria-hidden=true>dolor sit amet, consectetur adipiscing elit. Praesent vitae nisl ut metus
+aliquam tempor. Sed lacinia finibus urna vestibulum mattis. Nullam facilisis eros leo, feugiat posuere erat
+venenatis sed. Proin vitae finibus nisl. Donec eget suscipit turpis. Donec sed lectus lacinia, ultricies ipsum ac,
+finibus turpis. Ut rhoncus felis enim, at finibus magna pulvinar at. Donec rhoncus nulla ac enim varius, vitae
+semper mi fermentum. Aliquam id pellentesque enim.</span></p><p aria-hidden=true>Aliquam sollicitudin felis ut dapibus gravida. Ut sollicitudin libero velit, ut sollicitudin erat luctus a. Sed nunc
+mauris, viverra eget pellentesque a, faucibus sit amet dolor. In imperdiet blandit dolor, in elementum velit
+tincidunt at. Maecenas dictum auctor commodo. Etiam ac bibendum eros. Cras pharetra mi diam, eget accumsan massa
+commodo et. Ut tortor mauris, viverra nec porta vitae, posuere quis magna. Cras interdum lacus a mollis dignissim.</p><p aria-hidden=true>Quisque interdum augue id tellus vulputate vulputate. Maecenas ipsum arcu, rutrum in ultrices ac, aliquam ut ipsum.
+Pellentesque ultrices et ante ut venenatis. Vivamus in odio non nibh consequat lobortis in a mi. Etiam ornare justo
+sed sapien consequat congue.
+Vivamus scelerisque tellus neque, quis commodo sapien consequat nec. Nam pretium eu velit eu porta. Duis luctus
+risus vitae dignissim lacinia.</p></details><details class=animation-long><summary>Large size</summary><p>Lorem ipsum <span aria-hidden=true>dolor sit amet, consectetur adipiscing elit. Praesent vitae nisl ut metus
+aliquam tempor. Sed lacinia
+finibus urna vestibulum mattis. Nullam facilisis eros leo, feugiat posuere erat venenatis sed. Proin vitae
+finibus
+nisl. Donec eget suscipit turpis. Donec sed lectus lacinia, ultricies ipsum ac, finibus turpis. Ut rhoncus felis
+enim, at finibus magna pulvinar at. Donec rhoncus nulla ac enim varius, vitae semper mi fermentum. Aliquam id
+pellentesque enim.</span></p><p aria-hidden=true>Aliquam sollicitudin felis ut dapibus gravida. Ut sollicitudin libero velit, ut sollicitudin erat luctus a. Sed
+nunc
+mauris, viverra eget pellentesque a, faucibus sit amet dolor. In imperdiet blandit dolor, in elementum velit
+tincidunt at. Maecenas dictum auctor commodo. Etiam ac bibendum eros. Cras pharetra mi diam, eget accumsan massa
+commodo et. Ut tortor mauris, viverra nec porta vitae, posuere quis magna. Cras interdum lacus a mollis dignissim.
+Quisque interdum augue id tellus vulputate vulputate. Maecenas ipsum arcu, rutrum in ultrices ac, aliquam ut
+ipsum.
+Pellentesque ultrices et ante ut venenatis. Vivamus in odio non nibh consequat lobortis in a mi. Etiam ornare
+justo
+sed sapien consequat congue.</p><p aria-hidden=true>Vivamus scelerisque tellus neque, quis commodo sapien consequat nec. Nam pretium eu velit eu porta. Duis luctus
+risus vitae dignissim lacinia. In tincidunt dictum diam, eget sagittis elit dapibus vitae. Ut enim ipsum, placerat
+et egestas non, luctus ac mi. Sed bibendum odio a fermentum ultrices. Aliquam ut eleifend elit. Sed dapibus aliquet
+sapien ac auctor. Pellentesque vitae felis dolor. Mauris ac dui semper diam molestie cursus eu in nisl. Aliquam
+consectetur, eros eget consequat posuere, felis justo bibendum sem, at scelerisque justo neque id est. Sed dictum
+ultrices ex et hendrerit. Nulla rutrum lobortis ex vel tincidunt. Duis in faucibus nulla, vitae placerat dolor.
+Maecenas efficitur fermentum mi sit amet dignissim. Donec erat metus, sodales eu convallis sed, lobortis non turpis.</p></details><details class=animation-extra-long><summary>Extra large size</summary><p>Lorem ipsum <span aria-hidden=true>dolor sit amet, consectetur adipiscing elit. Praesent vitae nisl ut metus
+aliquam tempor. Sed lacinia
+finibus urna vestibulum mattis. Nullam facilisis eros leo, feugiat posuere erat venenatis sed. Proin vitae
+finibus
+nisl. Donec eget suscipit turpis. Donec sed lectus lacinia, ultricies ipsum ac, finibus turpis. Ut rhoncus felis
+enim, at finibus magna pulvinar at. Donec rhoncus nulla ac enim varius, vitae semper mi fermentum. Aliquam id
+pellentesque enim.</span></p><p aria-hidden=true>Aliquam sollicitudin felis ut dapibus gravida. Ut sollicitudin libero velit, ut sollicitudin erat luctus a. Sed
+nunc
+mauris, viverra eget pellentesque a, faucibus sit amet dolor. In imperdiet blandit dolor, in elementum velit
+tincidunt at. Maecenas dictum auctor commodo. Etiam ac bibendum eros. Cras pharetra mi diam, eget accumsan massa
+commodo et. Ut tortor mauris, viverra nec porta vitae, posuere quis magna. Cras interdum lacus a mollis dignissim.
+Quisque interdum augue id tellus vulputate vulputate. Maecenas ipsum arcu, rutrum in ultrices ac, aliquam ut
+ipsum.
+Pellentesque ultrices et ante ut venenatis. Vivamus in odio non nibh consequat lobortis in a mi. Etiam ornare
+justo
+sed sapien consequat congue.</p><p aria-hidden=true>Vivamus scelerisque tellus neque, quis commodo sapien consequat nec. Nam pretium eu velit eu porta. Duis luctus
+risus vitae dignissim lacinia. In tincidunt dictum diam, eget sagittis elit dapibus vitae. Ut enim ipsum, placerat
+et egestas non, luctus ac mi. Sed bibendum odio a fermentum ultrices. Aliquam ut eleifend elit. Sed dapibus
+aliquet
+sapien ac auctor. Pellentesque vitae felis dolor. Mauris ac dui semper diam molestie cursus eu in nisl. Aliquam
+consectetur, eros eget consequat posuere, felis justo bibendum sem, at scelerisque justo neque id est. Sed dictum
+ultrices ex et hendrerit. Nulla rutrum lobortis ex vel tincidunt. Duis in faucibus nulla, vitae placerat dolor.
+Maecenas efficitur fermentum mi sit amet dignissim. Donec erat metus, sodales eu convallis sed, lobortis non
+turpis.</p><p aria-hidden=true>Integer molestie efficitur nibh, nec consectetur quam tempus id. Vestibulum luctus nisi suscipit feugiat sodales.
+Aenean venenatis tincidunt ullamcorper. Curabitur luctus lectus vestibulum, finibus massa nec, pellentesque justo.
+Cras ac ultrices sapien. Morbi at est libero. Aliquam quam quam, pellentesque id interdum nec, mollis in sapien.
+Maecenas dolor purus, auctor a mattis eu, cursus quis odio.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id gravida sapien. Aenean id porttitor orci.
+In
+et euismod felis. Donec maximus congue orci, dignissim cursus tellus efficitur ac. Nunc aliquet est metus, nec
+facilisis nulla cursus sit amet. Vivamus convallis neque sed diam rhoncus.</p></details><h2 id=adding-media-query>Bonus: Adding media query to respect user's reduced motion preferences</h2><p>This is optional, but I'm adding it to improve accessibility of my animations. The <code>&lt;details></code>
+element will look and work as intended, but won't have the smooth opening and closing animation.</p><details><summary>Media query CSS code</summary><pre><code>@media screen and (prefers-reduced-motion: no-preference) {
+    /* Just paste the entire animation CSS code here, with all your presets */
+    details {
+    &::details-content {
+      ...
+    }
+    &[open]::details-content {
+      ...
+    }
+  }
+}</code></pre></details><hr><p><i>That's it! Hopefully someone else migth find this guide useful.</i></p></main></div><div id=right-column><ul id=social-media><li><a href=https://www.reddit.com/user/sqvrltastic/ target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/reddit.png alt=Reddit class=icon></a></li><li><a href=https://github.com/sqvrltastic target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/github.png alt=Github class=icon></a></li><li><a href=/rss.xml target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/rss.png alt=RSS class=icon></a></li><li><a href=mailto:sqvrltastic@gmail.com><img src=/assets/images/icons/email.png alt=Email class=icon></a></li></ul><button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon class=icon src=/assets/images/icons/sun.png alt="light theme is ON"></button><p id=theme-no-js>Theme-toggle:<br>[JavaScript required]</p><footer><p>&copy; 2026 Sqvrltastic<br>Made with Hugo<br>Hosted on GitHub Pages<br>Version: 3.0.0</p></footer></div></div><a href=#main id=scroll-to-top><img class=icon src=/assets/images/icons/arrow-up.png alt="scroll to top" class=icon>
+</a><script src=/assets/js/theme-body.min.b7355ff866b39c828793b4b20e879e8641f4e381429bc7c014d6b15796498e31.js></script><script src=/assets/js/scroll-to-top.min.c5bca0200cb6aa50ced053d63ecb5d705af86556d12ec3c0730c71b884c922d4.js></script></body></html>
