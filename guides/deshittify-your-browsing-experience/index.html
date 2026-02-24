@@ -31,9 +31,7 @@ self-hosted fonts.</p></noscript><div id=flex-container><div id=mobile-topbar><b
 <a href=/old-designs-archive>Old designs archive</a></div><div><strong>Outbound links</strong>
 <a href=/resources>Resources</a>
 <a href=/other-indie-websites>Other indie websites</a></div><div><strong>Other</strong>
-<a href=/art-usage-rights>Art usage rights</a></div></nav></div><div id=center-column><main id=main><header><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://sqvrltastic.art/","name":"Home","position":1},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/","name":"Guides","position":2},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/deshittify-your-browsing-experience/","name":"Deshittify your browsing experience","position":3}]}</script><ul id=breadcrumbs><li><a href=/>Home</a> /&nbsp;</li><li><a href=/guides/>Guides</a> /&nbsp;</li><li>Deshittify your browsing experience</li></ul><h1>Deshittify your browsing experience</h1><p>Published: <time datetime=2026-02-18>02/18/2026</time>
-|
-Updated: <time datetime=2026-02-24>02/24/2026</time></p></header><div class=note-box><p><strong>Table of contents:</strong></p><ol><li><a href=#introduction>Introduction</a></li><li><a href=#choosing-your-desktop-drowser>Choosing your desktop browser</a></li><li><a href=#changing-the-default-browser-settings>Changing default browser settings</a></li><li><a href=#disabling-ai-related-features-in-firefox>Disabling AI-related features in Firefox</a></li><li><a href=#firefox-extensions>Firefox Extensions</a></li><li><a href=#setting-up-custom-ublock-origin-filters>Setting up Ublock Origin custom filters</a></li><li><a href=#reddit-custom-ublock-origin-filters>Reddit custom Ublock Origin filters</a></li><li><a href=#youtube-custom-ublock-origin-filters>YouTube custom Ublock Origin filters</a></li><li><a href=#phone>Phone</a></li><li><a href=#post-scriptum>Post Scriptum</a></li></ol></div><h2 id=introduction>Introduction</h2><p>In recent years, there has been a surge of interest in topics such as digital minimalism and privacy in
+<a href=/art-usage-rights>Art usage rights</a></div></nav></div><div id=center-column><main id=main><header><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://sqvrltastic.art/","name":"Home","position":1},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/","name":"Guides","position":2},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/deshittify-your-browsing-experience/","name":"Deshittify your browsing experience","position":3}]}</script><ul id=breadcrumbs><li><a href=/>Home</a> /&nbsp;</li><li><a href=/guides/>Guides</a> /&nbsp;</li><li>Deshittify your browsing experience</li></ul><h1>Deshittify your browsing experience</h1><p>Published: <time datetime=2026-02-18>02/18/2026</time></p></header><div class=note-box><p><strong>Table of contents:</strong></p><ol><li><a href=#introduction>Introduction</a></li><li><a href=#choosing-your-desktop-drowser>Choosing your desktop browser</a></li><li><a href=#changing-the-default-browser-settings>Changing default browser settings</a></li><li><a href=#disabling-ai-related-features-in-firefox>Disabling AI-related features in Firefox</a></li><li><a href=#firefox-extensions>Firefox Extensions</a></li><li><a href=#setting-up-custom-ublock-origin-filters>Setting up Ublock Origin custom filters</a></li><li><a href=#reddit-custom-ublock-origin-filters>Reddit custom Ublock Origin filters</a></li><li><a href=#youtube-custom-ublock-origin-filters>YouTube custom Ublock Origin filters</a></li><li><a href=#phone>Phone</a></li><li><a href=#post-scriptum>Post Scriptum</a></li></ol></div><h2 id=introduction>Introduction</h2><p>In recent years, there has been a surge of interest in topics such as digital minimalism and privacy in
 the digital era. Countless guides on topics such as reducing your digital footprint, "debloating"
 your OS,
 curbing your
@@ -76,27 +74,21 @@ don't like, right click on it and use the "Block element..." option, it will bri
 pretty advanced! Down below are some of the <strong>custom Ublock Origin rules</strong> that I've made for myself...</p><h2 id=setting-up-custom-ublock-origin-filters>Setting up Ublock Origin custom filters</h2><p>To add custom rules, you need to:</p><ol><li>Click on your Ublock Origin icon in the browser toolbar</li><li>Find a ⚙️ icon that says "Open the dashboard"</li><li>Go to "My filters" section</li></ol><p>I will say that I am not really some Ublock Origin wizard and there is probably a cleaner way to write some of these
 rules, but they <em>do</em> work.</p><h2 id=reddit-custom-ublock-origin-filters>Reddit custom Ublock Origin filters</h2><p>I use Ublock to remove the distracting sidebars and most importantly, the home feed, which is always an endless
 scroll of usual plebbit garbage, <s>like US politics ragebait and shit relationship advice</s>.</p><details class=animation-medium><summary>Reddit Ublock Origin filters</summary><pre><code>! Reddit settings
-www.reddit.com/r/*##.nd\:overflow-hidden.nd\:visible.h-\[210px\].block
-www.reddit.com/r/*##shreddit-app[pagetype="home"] #main-content
-www.reddit.com/r/*##shreddit-app[pagetype="popular"] #main-content
-www.reddit.com/r/*##.box-border.py-md.flex-col.flex
-www.reddit.com/r/*##reddit-recent-pages
-www.reddit.com/r/*##pdp-right-rail
-www.reddit.com/r/*##.pt-lg.xs\:px-0.px-md
-www.reddit.com/r/*##.right-sidebar-s.flex-grid--main-container-card.min-w-0.flex-\[1\].w-full.main &gt; .nd\:visible
-www.reddit.com/r/*##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-\[16px\].relative.h-\[210px\]
-www.reddit.com/r/*##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-4.relative.h-\[210px\]
-www.reddit.com/r/*##.nd\:visible &gt; faceplate-expandable-section-helper &gt; .rounded-none.border-none.bg-transparent.m-0.p-0
-www.reddit.com/r/*##left-nav-top-section
+www.reddit.com##.nd\:overflow-hidden.nd\:visible.h-\[210px\].block
+www.reddit.com##shreddit-app[pagetype="home"] #main-content
+www.reddit.com##shreddit-app[pagetype="popular"] #main-content
+www.reddit.com##.box-border.py-md.flex-col.flex
+www.reddit.com##reddit-recent-pages
+www.reddit.com##pdp-right-rail
+www.reddit.com##.pt-lg.xs\:px-0.px-md
+www.reddit.com##.right-sidebar-s.flex-grid--main-container-card.min-w-0.flex-\[1\].w-full.main &gt; .nd\:visible
+www.reddit.com##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-\[16px\].relative.h-\[210px\]
+www.reddit.com##.carousel-item-cover.overflow-hidden.justify-end.flex-col.flex.rounded-4.relative.h-\[210px\]
+www.reddit.com##.nd\:visible &gt; faceplate-expandable-section-helper &gt; .rounded-none.border-none.bg-transparent.m-0.p-0
+www.reddit.com##left-nav-top-section
 ! Remove Google login popup
 ||accounts.google.com/gsi/iframe/select?client_id=705819728788-b2c1kcs7tst3b7ghv7at0hkqmtc68ckl.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=card&as=IH4Bxc7GDNXe8ta3uaTbAA&is_itp=true&channel_id=6df3f9a6920ef08ff4c32a7413f55d5b78e8cec3b4113eac8af88c14b2ea8056&origin=https%3A%2F%2Fwww.reddit.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
-</code></pre></details><p><strong><time datetime=2026-02-24>02/24/2026 update:</time></strong> I replaced <code>www.reddit.com</code> with
-<code>www.reddit.com/r/*</code>
-because the former rule had a quirk that it would remove posts from Reddit's /u/ profile section, even if those
-posts didn't have any
-of the blacklisted words. If any of the blacklisted words were present in any way in the HTML structure it would
-still cause UBlock to remove them. The updated rule simply whitelists the individual's profile section, but the word
-filter still works on the /r/ section a.k.a. the subreddits themselves.</p><p>Also, although reddit doesn't really have an option to blacklist certain words or mute certain users (without
+</code></pre></details><p>Also, although reddit doesn't really have an option to blacklist certain words or mute certain users (without
 outright blocking them), we can use Ublock to automatically hide from out feed posts that contain certain
 <strong>keywords</strong> ANYWHERE in the post structure.</p><p>For example:</p><details><summary>Reddit keyword filters</summary><pre><code>! Reddit posts keyword filters
 www.reddit.com##article.m-0.w-full:has-text(/canada/i)
@@ -148,5 +140,5 @@ isheep. There really isn't much you can do since you can't sideload apps, AFAIK.
 own "Anti-brainrot aktion" guide</a> for giving me the necessary surge of productivity to actually sit down
 and write this thing down, even though it took me a while to actually publish it 😑. Seriously go read that stuff,
 it's 🤌🔥.</p><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":[{"@type":"Person","name":"sqvrltastic","url":"https://sqvrltastic.art/about-me/"}],"contentUrl":"https://sqvrltastic.art/guides/deshittify-your-browsing-experience/","datePublished":"2026-02-18T00:00:00Z","description":"In recent years, there has been a surge of interest in topics such as digital minimalism and privacy in the digital era. Countless guides on topics such as reducing your digital footprint, debloating your OS and curbing your social media addiction have been written, some good, some mediocre and I'm about to add my own one to the growing pile...","headline":"Deshittify your browsing experience","name":"Deshittify your browsing experience"}</script></main></div><div id=right-column><ul id=social-media><li><a href=https://www.reddit.com/user/sqvrltastic/ target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/reddit.png alt=Reddit class=icon></a></li><li><a href=https://github.com/sqvrltastic target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/github.png alt=Github class=icon></a></li><li><a href=/rss.xml target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/rss.png alt=RSS class=icon></a></li><li><a href=mailto:sqvrltastic@gmail.com><img src=/assets/images/icons/email.png alt=Email class=icon></a></li></ul><button id=theme-toggle aria-label="toggle theme">
-<img id=theme-icon class=icon src=/assets/images/icons/sun.png alt="light theme is ON"></button><p id=theme-no-js>Theme-toggle:<br>[JavaScript required]</p><footer><p>&copy; 2026 Sqvrltastic<br>Made with Hugo<br>Hosted on GitHub Pages<br>Version: 3.4.10</p></footer></div></div><a href=#main id=scroll-to-top><img src=/assets/images/icons/arrow-up.png alt="scroll to top" class=icon>
+<img id=theme-icon class=icon src=/assets/images/icons/sun.png alt="light theme is ON"></button><p id=theme-no-js>Theme-toggle:<br>[JavaScript required]</p><footer><p>&copy; 2026 Sqvrltastic<br>Made with Hugo<br>Hosted on GitHub Pages<br>Version: 3.4.9</p></footer></div></div><a href=#main id=scroll-to-top><img src=/assets/images/icons/arrow-up.png alt="scroll to top" class=icon>
 </a><script src=/assets/js/theme-body.min.576c50af9da1ef178c7616f0b2dd2ad302d7a9499c682567361656f9700ea2cc.js></script><script src=/assets/js/scroll-to-top.min.c5bca0200cb6aa50ced053d63ecb5d705af86556d12ec3c0730c71b884c922d4.js></script></body></html>
