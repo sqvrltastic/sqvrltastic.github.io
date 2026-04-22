@@ -1,0 +1,212 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Learn how and why you should self-host your website's fonts and the various methods to do so. Very in-depth!"><meta property="og:title" content="A guide to self-hosting and optimizing your website's fonts (+ some typography tips) | Sqvrltastic's Homepage"><meta property="og:description" content="Learn how and why you should self-host your website's fonts and the various methods to do so. Very in-depth!"><meta property="og:type" content="website"><meta property="og:url" content="https://sqvrltastic.art/guides/guide-to-self-hosting-and-optimizing-fonts/"><meta property="twitter:domain" content="sqvrltastic.art"><meta property="twitter:url" content="https://sqvrltastic.art"><meta name=twitter:title content="A guide to self-hosting and optimizing your website's fonts (+ some typography tips) | Sqvrltastic's Homepage"><meta name=twitter:description content="Learn how and why you should self-host your website's fonts and the various methods to do so. Very in-depth!"><title>A guide to self-hosting and optimizing your website's fonts (+ some typography tips) | Sqvrltastic's Homepage</title>
+<link rel=icon type=image/x-icon href=/favicon.ico><link rel=stylesheet href=/assets/css/main.min.6323c0f8a494a890cfda56ec95fb9c2f3a19186039a5b149a16eca81c08a7894.css><link rel=alternate type=application/rss+xml title="RSS feed for
+  Sqvrltastic's Homepage" href=https://sqvrltastic.art/rss.xml><link rel=canonical href=https://sqvrltastic.art/guides/guide-to-self-hosting-and-optimizing-fonts/><script src=/assets/js/theme-head.min.b68f4c912b682e9187a7b9ac05ce8ae40866b73aad9f87d547f6885919b4062f.js></script><noscript><style>#theme-toggle,#mobile-theme-toggle{display:none}#theme-no-js,#mobile-theme-no-js{display:block}@media(max-width:1200px){#theme-no-js{display:none}}#scroll-to-top{opacity:1;content-visibility:visible;pointer-events:auto}#mobile-menu::details-content{inset-block-start:15em;inset-inline-start:0;inset-inline-end:0;max-inline-size:100%;margin:0 auto;white-space:normal}#main{scroll-margin-block-start:7em}</style></noscript></head><body><a href=#main id=skip-link>Skip to main content</a><noscript class=noscript><p><strong>Warning:</strong> JavaScript is disabled in your browser. The core functionality of this site works
+without JavaScript, but it is required for some QoL features to work, as well as for displaying custom,
+self-hosted fonts.</p></noscript><div id=flex-container><div id=mobile-topbar><button id=mobile-theme-toggle aria-label="toggle theme">
+<img id=mobile-theme-icon class=icon src=/assets/images/icons/sun.png alt="light theme is ON"></button><p id=mobile-theme-no-js>Theme-toggle:<br>[JS required]</p><a id=mobile-logo href=/>Sqvrltastic's Homepage</a><details id=mobile-menu><summary>Menu</summary><nav><div><a href=/><strong>Home</strong></a></div><div><strong>Artworks</strong>
+<a href=/fanart>Fanart</a>
+<a href=/originals>Originals</a></div><div><strong>Writings</strong>
+<a href=/guides>Guides</a>
+<a href=/journal>Journal</a></div><div><strong>Personal</strong>
+<a href=/about-me>About me</a>
+<a href=/my-tools>My tools</a>
+<a href=/favorite-media>Favorite media</a></div><div><strong>Website</strong>
+<a href=/guestbook>Guestbook</a>
+<a href=/buttons-and-banners>Buttons and banners</a>
+<a href=/about-this-website>About this website</a>
+<a href=/old-designs-archive>Old designs archive</a></div><div><strong>Outbound links</strong>
+<a href=/resources>Resources</a>
+<a href=/other-indie-websites>Other indie websites</a></div><div><strong>Other</strong>
+<a href=/art-usage-rights>Art usage rights</a></div></nav></details></div><div id=left-column><a id=logo href=/>Sqvrltastic's<br>Homepage</a><nav><div><a href=/><strong>Home</strong></a></div><div><strong>Artworks</strong>
+<a href=/fanart>Fanart</a>
+<a href=/originals>Originals</a></div><div><strong>Writings</strong>
+<a href=/guides>Guides</a>
+<a href=/journal>Journal</a></div><div><strong>Personal</strong>
+<a href=/about-me>About me</a>
+<a href=/my-tools>My tools</a>
+<a href=/favorite-media>Favorite media</a></div><div><strong>Website</strong>
+<a href=/guestbook>Guestbook</a>
+<a href=/buttons-and-banners>Buttons and banners</a>
+<a href=/about-this-website>About this website</a>
+<a href=/old-designs-archive>Old designs archive</a></div><div><strong>Outbound links</strong>
+<a href=/resources>Resources</a>
+<a href=/other-indie-websites>Other indie websites</a></div><div><strong>Other</strong>
+<a href=/art-usage-rights>Art usage rights</a></div></nav></div><div id=center-column><main id=main><header><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://sqvrltastic.art/","name":"Home","position":1},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/","name":"Guides","position":2},{"@type":"ListItem","item":"https://sqvrltastic.art/guides/guide-to-self-hosting-and-optimizing-fonts/","name":"A guide to self-hosting and optimizing your website's fonts (+ some typography tips)","position":3}]}</script><ul id=breadcrumbs><li><a href=/>Home</a> /&nbsp;</li><li><a href=/guides/>Guides</a> /&nbsp;</li><li>A guide to self-hosting and optimizing your website's fonts (+ some typography tips)</li></ul><h1>A guide to self-hosting and optimizing your website's fonts (+ some typography tips)</h1><p>Published: <time datetime=2026-04-22>04/22/2026</time></p></header><div class=note-box><p><strong>Table of contents:</strong></p><ol><li><a href=#why-self-host>Why should you self-host fonts in the first place?</a></li><li><a href=#where-to-get-fonts>Where to get web fonts for free?</a></li><li><a href=#introduction-to-subsetting-fonts>Introduction to subsetting fonts</a></li><li><a href=#substetting-fonts-using-google-fonts-helper>Subsetting fonts using Google Font Helper</a></li><li><a href=#substetting-fonts-using-fonttools-and-brotli>Subsetting fonts using FontTools and Brotli</a></li><li><a href=#adding-custom-fonts-to-css-stylesheet>Adding custom fonts to CSS stylesheet</a></li><li><a href=#bonus-typography-tips>Bonus typography tips</a></li></ol></div><h2 id=why-self-host>Why should you self-host fonts in the first place?</h2><p>Here are some of the reasons you should self-host your fonts, instead of relying on 3rd party CDNs:</p><ul><li>Improved user privacy; If you are importing fonts from a 3rd party service such as Google for example, your
+users' data is beholden to their own privacy policy and you <a href=https://thehackernews.com/2022/01/german-court-rules-websites-embedding.html target=_blank rel="noopener noreferrer">might be breaking GDPR</a>.</li><li>If the 3rd party service for whatever reason becomes unavailable, your custom fonts will be unavailable as well.</li><li>Self-hosting method is marginally faster and more performant. Now, if you are like me and have been doing web
+dev for a while, you
+might have heard that linking fonts from Google is faster because of a thing called <strong>"caching"</strong>,
+but it is not the case anymore.
+Most browsers now have a separate cache for every website, this practice is called <a href=https://addyosmani.com/blog/double-keyed-caching/ target=_blank rel="noopener noreferrer">"cache
+partitioning"</a>.</li><li>Self-hosting fonts is the easiest way to ensure that your website's text looks consistent across different
+browsers and operating
+systems. This is not the case if you're relying on system fonts, which do, however, have the advantage in the
+performance and simplicity department.</li></ul><h2 id=where-to-get-fonts>Where to get web fonts for free?</h2><div class=note-box><p><strong>Important:</strong> Make sure you comply with the font's license for your intended use!!!
+Please don't just grab random fonts you downloaded online and upload them to your website.
+If you don't have a commercial license for your font
+and you get caught red-handed it will tarnish your reputation and might even get you into legal trouble. Either
+buy a license or only use fonts that are free for commercial use (all Google fonts are, linked below).</p></div><p>Probably the most well-known option, used by both
+hobbyists and professionals, is <a href=https://fonts.google.com/ target=_blank rel="noopener noreferrer">Google
+Fonts</a>. Other popular options are
+<a href target=_blank rel="noopener noreferrer">1001fonts</a> and <a href=https://www.dafont.com/ target=_blank rel="noopener noreferrer">Dafont</a>, but please check the author's README file before using
+them in
+your own projects!</p><h2>Note on web font formats</h2><p>When you download a font to your PC, it will probably be in .ttf (TrueType) format. <strong>TTF fonts are NOT
+optimized for web use!</strong> While they will work if you upload and link them in your CSS sheet, they are
+usually too large and will negatively affect your website loading times, sometimes significantly! The current file
+standard for web fonts is <strong>WOFF2</strong> and it's widely accepted. There is also basic WOFF if you need to
+support some <em>very</em> old browsers, and I will actually show you later how to add it as a fallback in case you
+want to! I will show you how to convert .ttf to .woff2 font files below...</p><h2 id=introduction-to-subsetting-fonts>Introduction to subsetting fonts</h2><p>Say you have a font file that supports 5 different languages, extended Latin, Cyrillic
+and Greek alphabet, but you only need the letters used in the English language? Or maybe, your font comes with 10
+different weights and italics variants, but you only need the regular weight, bold, italic and bold-italic variants?
+You cut everything
+else out. That's called <strong>"subsetting"</strong>. Subsetting creates a smaller font file that can drastically
+improve loading times,
+which is super important for websites and web applications. I will show you two different methods I use below. Also,
+I will mention <a href=https://www.fontsquirrel.com/tools/webfont-generator target=_blank rel="noopener noreferrer">FontSquirell</a> here because I know some people like it, but personally, I don't use
+it, so I can't vouch for it. Use it at your discretion.</p><h2 id=substetting-fonts-using-google-fonts-helper>Subsetting using Google Fonts Helper</h2><p>The first method is by far the easiest, but it only works with Google Fonts. Go to <a href=https://fonts.google.com/ target=_blank rel="noopener noreferrer">Google
+Fonts</a> and look for a font that you like. There are some filters and tags that you can use to refine your
+search. Make sure your chosen font supports languages and symbols you intend to use
+on your website. You can download and install the font on your PC to play around with it, but it's not
+necessary.</p><p>Next, go to the website <a href=https://gwfh.mranftl.com/fonts target=_blank rel="noopener noreferrer">Google
+webfonts helper</a>. Search for a font that you just downloaded</p><figure class=figure-annotation><img class=big-image src=/assets/images/editorial/google-font-helper.avif alt="Google Fonts Helper"><figcaption>Just select everything you
+need and leave
+out everything else. It really is that simple!</figcaption></figure><p>In the "3. Copy CSS" section just leave everything as default ("Modern Browsers"). Scroll a bit more down and you
+will have your newly optimized font files waiting for you. Just download the .zip archive and extract your new
+.woff2 files somewhere. Skip to <a href=#adding-custom-fonts-to-css-stylesheet>>>Adding custom-fonts to
+CSS stylesheet</a> if you just want to learn how to self-host it ASAP.</p><h2 id=substetting-fonts-using-fonttools-and-brotli>Subsetting using FontTools and Brotli</h2><p>The second method is a bit more complicated, but also more versatile and can be used with absolutely <em>any</em>
+font.
+Now, since I'm on Windows 11 (the price I pay for being a gaymer), <strong>I wrote this part primarily with Windows
+users in
+mind</strong>, but the process shouldn't be too different on other operating systems.</p><p>You will need to have preinstalled:</p><ul><li>Git Bash</li><li>Python 🐍</li></ul><p>If you don't know how to install either, just look up the most up-to-date tutorial online, depending on your OS.
+During the Python installation,
+<strong>make sure to check ✅ the
+"Add python.exe to PATH" option during the installation (on Windows).</strong> To check if Python is installed
+correctly in Git Bash, run <code>python --version</code>, it should return a version number (e.g. "Python 3.12.1").
+After you're done with that, run <code>python -m ensurepip</code> to check if you have <strong>pip</strong> (we will
+need it for the
+next step).</p><p>Next, you will need to install <strong>FontTools</strong> and <strong>Brotli</strong>. To do so, open Git Bash and
+install it with pip. Run:
+<code>python -m pip install fonttools brotli</code> (this should work, regardless of your
+shell configuration). Brotli is required when processing woff2 files, or else FontTools will throw an error.</p><hr><p>For demonstration purposes, I will be using the same font that I'm using on this website — <strong>Inter</strong>;
+you can download it from the aforementioned Google Fonts if you want to follow along. It supports a lot
+of languages, weights (thin vs bold), has <strong>true italics</strong> (some fonts come without a separate italics
+font, so browsers
+just simulate it by skewing the letters) and a few different <strong>optical size presets</strong> (optical sizing
+in fonts adjusts the shape of letters and spacing for better look and legibility at different font sizes, like small
+body text vs big heading text).</p><p>After you've downloaded and extracted the Inter font .zip archive, open the folder and go to the "static" folder
+within it
+and grab the font variants that you actually need. <strong>For my Inter example</strong>, I will only use the
+following static font files:</p><ul><li>Inter_18pt-Regular.ttf</li><li>Inter_18pt-Italic.ttf</li><li>Inter_18pt-ExtraBold.ttf</li><li>Inter_18pt-ExtraBoldItalic.ttf</li><li>Inter_24pt-Black.ttf (for headings)</li></ul><hr><p>Next, you will need to
+determine the <strong>Unicode ranges</strong> that you require that cover your language. I found this useful <a href="https://www.unicodecharacter.org/blocks?utm_source=chatgpt.com" target=_blank rel="noopener noreferrer">Unicode Block table</a> to be invaluable for that. You can also just use
+Google or
+whatever search engine you prefer to look up something like "What Unicode range is Serbian Latin" and usually the
+search snippet will give you the correct answer (though you should always double-check!).</p><div class=note-box><p><strong>Tip:</strong> You can inspect any font file to see what glyphs and languages it supports with an online
+tool such as <a href=https://fontinfo.app/ target=_blank rel="noopener noreferrer">Font Info</a>.</p></div><p>For example, if you just
+need everything that is present on your average US English keyboard (letters, numbers, symbols), plus some advanced
+punctuation and symbols, your Unicode range
+will be <code class=text-break-all>--unicodes="U+0020-007E,U+00A0-00FF,U+2000-206F"</code>. It includes:</p><ul><li>U+0020-007E — Core US keyboard (includes symbols and punctuation such as !@#$%^&*()_+[]{};:'",.<>/?\|);
+essential</li><li>U+00A0-00FF — Latin 1 supplement; includes things like copyright symbol (©)</li><li>U+2000-206F — General punctuation; includes things like quotation marks (fancy ones), en dash (–) and em dash
+(—)
+(my
+beloved! ♥️). By the way, did you know that you can easily insert them in your text with a keyboard shortcut
+<kbd>Win</kbd> + <kbd>-</kbd> for en dash and <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> for em dash?
+Nifty!
+✨ 🙂</li></ul><hr><p>Back to <strong>my Inter example</strong>... Go to your extracted Inter
+.zip archive folder, and then open the Git Bash console inside the "static" folder. You will have to run the
+following
+command for <em>every</em> file that you intend to use, just change the file name field.</p><p>This is the full command that I use:
+<code class=text-break-all>pyftsubset Inter_18pt-Regular.ttf --output-file="inter-regular.woff2" --unicodes="U+0020-007F,U+00A0-00FF,U+0100-017F,U+0400-04FF,U+2000-206F,U+20A0-20CF,U+2100-214F" --flavor=woff2</code></p><p>Let's break it down what each part means:</p><ul><li><code>pyftsubset</code> — calling the tool</li><li><code>Inter_18pt-Regular.ttf</code> — my initial font file</li><li><code>--output-file="inter-regular.woff2"</code> — specifying the file name <em>and</em> file type extension for
+my output file</li><li><code>--unicodes="..."</code> — specific Unicode ranges that I need; In my case:<ul><li>U+0020-007F — Core US keyboard</li><li>U+00A0-00FF — Latin 1 supplement for copyright symbol (©)</li><li>U+0100-017F — Latin Extended-A for Serbian Latin alphabet</li><li>U+0400-04FF — Standard Cyrillic alphabet for occasional text in Russian or Cyrillic Montenegrin</li><li>U+2000-206F — Advanced punctuation for en dash and em dash</li><li>U+20A0-20CF — Currency symbols; rarely used...</li><li>U+2100-214F — Letterlike Symbols, like trademark (™)</li></ul></li><li><code>--flavor=woff2</code> — to specify that I want it converted to WOFF2 format</li></ul><p>If you did everything correctly, you should see a new file appear in the same folder named inter-regular.woff2.
+Repeat the same process for every other file (that you need). I make one exception for the Inter_24pt-Black.ttf
+file. Since I
+only use that variant for headings, I use a much narrower <code>--unicodes="U+0020-007E"</code> Unicode range
+because I know that I only need the core US keyboard.</p><h2 id=adding-custom-fonts-to-css-stylesheet>Adding custom-fonts to CSS stylesheet</h2><p>Put your newly minted .woff2 files somewhere in your website's project folder. For example, my entire website is
+kept
+in the folder named "public", this is the one that I later upload online. Inside the "public" folder, I have a
+folder
+named "assets" and inside "assets", I have my "fonts" folder with all my .woff2 font files. You don't have to follow
+this specific file structure, but it's pretty standard.</p><p>Your CSS file should start with the <code>@charset UTF-8</code> line and typically, all custom CSS
+<code>@font-face</code> rules come
+after that, at the top of the document. To import and actually use your custom fonts on your website, you will need
+to add the following rules in your CSS style sheet:</p><details class=animation-medium><summary>My own CSS code as an example (show)</summary><pre><code>/* Custom typeface — Inter (body text) */
+
+/* Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Extra Bold Italic */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-800-italic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Black */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}</code></pre></details><p>Let's break each part down, line by line:</p><ul><li><code>font-family: "Inter";</code> — I am giving a name to my font</li><li><p><code>src: url("../fonts/inter-regular.woff2") format("woff2");</code> — The first part is the
+<strong>relative</strong> path
+to your font file, depending on its location within <em>your</em> folder structure. The second one
+specifies
+what font format you are using (woff2, woff, or truetype for .ttf files).</p><p>You can also add a fallback option, like this:</p><pre><code>src: ("../fonts/inter-regular.woff2") format("woff2"),
+     ("../fonts/inter-regular.woff") format("woff");</code></pre><p>... But it really isn't necessary unless you need to support <em>really</em> old browsers.</p></li><li><code>font-weight: 400;</code> — specifies the weight/thickness of the font; lower number means thinner font
+(400 — regular, 700 — bold)</li><li><code>font-style: normal;</code> — either normal or italic</li><li><code>font-display: swap;</code> — usually you will use either "block", or "swap". This rule determines how your
+website's text will appear while your font is loading. Don't neglect that! Slower internet connections are still
+a thing. "Block" means that the font
+will be completely invisible while the custom font is loading, <strong>NOT recommended</strong> for body text,
+but it might work well for things like logos. "Swap" makes it so that the unstyled text will be visible during
+the
+loading time and then it will get replaced with the custom font later, after it loads. You can specify some
+<strong>web
+safe fonts</strong> that look similar to your custom font as fallback later on in the <code>body</code>
+section.</li></ul><div class=note-box><p><strong>Tip:</strong> You can simulate slow
+network speed by pressing <kbd>F12</kbd> to open developer tools and go into the "Network" tab and select one of
+the 2G, 3G, or 4G speed presets to throttle the connection speed. Then, perform a hard refresh by pressing
+<kbd>Ctrl</kbd> + <kbd>R</kbd> keys and observe.</p></div><p>After you added your <code>@font-face</code> rules, add your new font to <code>body</code> (or wherever you plan on
+using it):</p><pre><code>body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+}</code></pre><p>Make sure to specify fallback fonts like I did!</p><h2 id=bonus-typography-tips>Bonus typography tips</h2><p>The default line-height of your website's body font is usually way too small, which leads to poor text readability,
+especially for some people with dyslexia. To fix this, add a <code>line-height</code> CSS rule to your stylesheet
+and start with a value that is too big, like 200% for example and then dial it down to something that looks good for
+your particular font. Usually, a value close to 150% looks the best.</p><p>Avoid using font weights that are too thin. They may be trendy and look sleek, but they are hard to read. Stick with
+font weight 400 ("regular") to stay safe. Make sure the colors have enough contrast as well.</p><p>On the other hand, it usually looks good when your headings are extra bold
+or even black so that they stand apart more from the main text. Make sure they are sufficiently big as well. Start
+with a value that is too big and then lower it down gradually until you find something that looks good.
+Additionally, with regard to headings, you might actually want to lower the default <code>line-height</code> and
+<code>letter-spacing</code> CSS values. This is not a hard rule though, so just experiment and see what looks good
+for your website project.</p><p>There is a nice little-known CSS rule called <code>text-wrap</code>. You can use <code>text-wrap: balance;</code>
+for the headings and <code>text-wrap: pretty;</code> for the body text. The value "balance" ensures that the text
+lines remain of similar length, which looks more visually pleasing. The value "pretty" prevents the formation of
+so-called "typographic orphans", which is a single word from a paragraph that dangles at the end of a block of
+text and looks unappealing. As of writing this guide, the value "pretty" doesn't work in Firefox (text just appears
+normal, it doesn't do anything).</p><p>Avoid using px for font sizing since it's not responsive.</p><hr><p>Thanks for reading and I hope that this guide was useful! ♥️</p><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","author":[{"@type":"Person","name":"sqvrltastic","url":"https://sqvrltastic.art/about-me/"}],"contentUrl":"https://sqvrltastic.art/guides/guide-to-self-hosting-and-optimizing-fonts/","datePublished":"2026-04-22T00:00:00Z","description":"Learn how and why you should self-host your website's fonts and the various methods to do so. Very in-depth!","headline":"A guide to self-hosting and optimizing your website's fonts (+ some typography tips)","name":"A guide to self-hosting and optimizing your website's fonts (+ some typography tips)"}</script></main></div><div id=right-column><ul id=social-media><li><a href=https://www.reddit.com/user/sqvrltastic/ target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/reddit.png alt=Reddit class=icon></a></li><li><a href=https://github.com/sqvrltastic target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/github.png alt=Github class=icon></a></li><li><a href=/rss.xml target=_blank rel="noopener noreferrer"><img src=/assets/images/icons/rss.png alt=RSS class=icon></a></li><li><a href=mailto:sqvrltastic@gmail.com><img src=/assets/images/icons/email.png alt=Email class=icon></a></li></ul><button id=theme-toggle aria-label="toggle theme">
+<img id=theme-icon class=icon src=/assets/images/icons/sun.png alt="light theme is ON"></button><p id=theme-no-js>Theme-toggle:<br>[JavaScript required]</p><footer><p>&copy; 2026 Sqvrltastic<br>Made with Hugo<br>Hosted on GitHub Pages<br>Version: 3.5.11</p></footer></div></div><a href=#main id=scroll-to-top><img src=/assets/images/icons/arrow-up.png alt="scroll to top" class=icon>
+</a><script src=/assets/js/theme-body.min.576c50af9da1ef178c7616f0b2dd2ad302d7a9499c682567361656f9700ea2cc.js></script><script src=/assets/js/scroll-to-top.min.c5bca0200cb6aa50ced053d63ecb5d705af86556d12ec3c0730c71b884c922d4.js></script></body></html>
